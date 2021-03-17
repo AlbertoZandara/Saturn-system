@@ -1,0 +1,162 @@
+(ExpressProject "Design1"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File
+         "C:\Users\AZand_000\Desktop\University\Laurea Triennale\Tesi triennale\Hardware\OrCAD\Projects\Ver 2.0\Schematics\LIBRARY1.OLB"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\design1.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x"))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (UVM30A
+      (FullPartName "UVM30A.Normal")
+      (LibraryName
+         "C:\USERS\AZAND_000\DESKTOP\UNIVERSITY\LAUREA TRIENNALE\TESI TRIENNALE\HARDWARE\ORCAD\PROJECTS\VER 2.0\SCHEMATICS\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    ("CAPACITIVE 1.2"
+      (FullPartName "CAPACITIVE 1.2.Normal")
+      (LibraryName
+         "C:\USERS\AZAND_000\DESKTOP\UNIVERSITY\LAUREA TRIENNALE\TESI TRIENNALE\HARDWARE\ORCAD\PROJECTS\VER 2.0\SCHEMATICS\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (RAINMODULE
+      (FullPartName "RAINMODULE.Normal")
+      (LibraryName
+         "C:\USERS\AZAND_000\DESKTOP\UNIVERSITY\LAUREA TRIENNALE\TESI TRIENNALE\HARDWARE\ORCAD\PROJECTS\VER 2.0\SCHEMATICS\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (DS1820
+      (FullPartName "DS1820.Normal")
+      (LibraryName
+         "C:\USERS\AZAND_000\DESKTOP\UNIVERSITY\LAUREA TRIENNALE\TESI TRIENNALE\HARDWARE\ORCAD\PROJECTS\VER 2.0\SCHEMATICS\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (BMP280
+      (FullPartName "BMP280.Normal")
+      (LibraryName
+         "C:\USERS\AZAND_000\DESKTOP\UNIVERSITY\LAUREA TRIENNALE\TESI TRIENNALE\HARDWARE\ORCAD\PROJECTS\VER 2.0\SCHEMATICS\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (GY30
+      (FullPartName "GY30.Normal")
+      (LibraryName
+         "C:\USERS\AZAND_000\DESKTOP\UNIVERSITY\LAUREA TRIENNALE\TESI TRIENNALE\HARDWARE\ORCAD\PROJECTS\VER 2.0\SCHEMATICS\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (12_HEADER
+      (FullPartName "12_HEADER.Normal")
+      (LibraryName
+         "C:\USERS\AZAND_000\DESKTOP\UNIVERSITY\LAUREA TRIENNALE\TESI TRIENNALE\HARDWARE\ORCAD\PROJECTS\VER 2.0\SCHEMATICS\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (6_HEADER
+      (FullPartName "6_HEADER.Normal")
+      (LibraryName
+         "C:\USERS\AZAND_000\DESKTOP\UNIVERSITY\LAUREA TRIENNALE\TESI TRIENNALE\HARDWARE\ORCAD\PROJECTS\VER 2.0\SCHEMATICS\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (24_HEADER
+      (FullPartName "24_HEADER.Normal")
+      (LibraryName
+         "C:\USERS\AZAND_000\DESKTOP\UNIVERSITY\LAUREA TRIENNALE\TESI TRIENNALE\HARDWARE\ORCAD\PROJECTS\VER 2.0\SCHEMATICS\LIBRARY1.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "AZand_000")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\AZand_000\Desktop\University\Laurea Magistrale\Research project in pervasive computing\design1.dsn")
+      (Path "Design Resources"
+         "C:\Users\AZand_000\Desktop\University\Laurea Magistrale\Research project in pervasive computing\design1.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library"
+         "C:\Users\AZand_000\Desktop\University\Laurea Triennale\Tesi triennale\Hardware\OrCAD\Projects\Ver 2.0\Schematics\LIBRARY1.OLB"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 212"))
+      (Tab 0))
+    (Doc
+      (Type "COrPartDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 1264 78 329")
+        (PackageScroll "0 0")
+        (PackageZoom "1")
+        (PartPackage "Part")
+        (Scroll "737 79")
+        (Zoom "231"))
+      (Path
+         "C:\Users\AZand_000\Desktop\University\Laurea Triennale\Tesi triennale\Hardware\OrCAD\Projects\Ver 2.0\Schematics\LIBRARY1.OLB")
+      (Package "BMP280"))
+    (Doc
+      (Type "COrPartDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1290 104 355")
+        (PackageScroll "0 0")
+        (PackageZoom "1")
+        (PartPackage "Part")
+        (Scroll "11 53")
+        (Zoom "103"))
+      (Path
+         "C:\Users\AZand_000\Desktop\University\Laurea Triennale\Tesi triennale\Hardware\OrCAD\Projects\Ver 2.0\Schematics\LIBRARY1.OLB")
+      (Package "GY30"))
+    (Doc
+      (Type "COrPartDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 26 919 26 277")
+        (PackageScroll "0 0")
+        (PackageZoom "1")
+        (PartPackage "Part")
+        (Scroll "541 46")
+        (Zoom "231"))
+      (Path
+         "C:\Users\AZand_000\Desktop\University\Laurea Triennale\Tesi triennale\Hardware\OrCAD\Projects\Ver 2.0\Schematics\LIBRARY1.OLB")
+      (Package "DS1820"))
+    (Doc
+      (Type "COrPartDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 1264 78 329")
+        (PackageScroll "0 0")
+        (PackageZoom "1")
+        (PartPackage "Part")
+        (Scroll "2355 690")
+        (Zoom "460"))
+      (Path
+         "C:\Users\AZand_000\Desktop\University\Laurea Triennale\Tesi triennale\Hardware\OrCAD\Projects\Ver 2.0\Schematics\LIBRARY1.OLB")
+      (Package "RAINMODULE"))
+    (Doc
+      (Type "COrPartDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 997 104 355")
+        (PackageScroll "0 0")
+        (PackageZoom "1")
+        (PartPackage "Part")
+        (Scroll "575 375")
+        (Zoom "230"))
+      (Path
+         "C:\Users\AZand_000\Desktop\University\Laurea Triennale\Tesi triennale\Hardware\OrCAD\Projects\Ver 2.0\Schematics\LIBRARY1.OLB")
+      (Package "CAPACITIVE 1.2"))
+    (Doc
+      (Type "COrPartDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 893 0 251")
+        (PackageScroll "0 0")
+        (PackageZoom "1")
+        (PartPackage "Part")
+        (Scroll "557 33")
+        (Zoom "231"))
+      (Path
+         "C:\Users\AZand_000\Desktop\University\Laurea Triennale\Tesi triennale\Hardware\OrCAD\Projects\Ver 2.0\Schematics\LIBRARY1.OLB")
+      (Package "UVM30A"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 1264 78 329")
+        (Scroll "-132 18")
+        (Zoom "90")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\AZAND_000\DESKTOP\UNIVERSITY\LAUREA MAGISTRALE\RESEARCH PROJECT IN PERVASIVE COMPUTING\DESIGN1.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))
