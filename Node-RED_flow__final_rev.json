@@ -1,0 +1,3957 @@
+[
+    {
+        "id": "edd64c81.e7c368",
+        "type": "tab",
+        "label": "Home",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "a7863da5.b3ad4",
+        "type": "tab",
+        "label": "Setup",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "27cd4eae.5a94e2",
+        "type": "subflow",
+        "name": "Agro 1",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 740,
+                "wires": [
+                    {
+                        "id": "698f2299.5dd54c"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "e14295b9.942268",
+        "type": "subflow",
+        "name": "Agro 2",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 740,
+                "wires": [
+                    {
+                        "id": "c20e9d05.01a88"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "37ca5c97.bfeb74",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#ff7d00",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#ff7d00",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#ff7d00",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#ffa44d",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#ff7d00",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "SATURN Control panel",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "4754eb3d.0d2434",
+        "type": "ui_group",
+        "name": "Connection setup",
+        "tab": "e57977ec.1eb028",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "e57977ec.1eb028",
+        "type": "ui_tab",
+        "name": "Settings",
+        "icon": "settings",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "19997b20.4960bd",
+        "type": "ui_group",
+        "name": "Pair new agricolis",
+        "tab": "e57977ec.1eb028",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "49beb9b1.c88ee8",
+        "type": "xbee-config",
+        "apiMode": "2",
+        "rawFrames": false,
+        "convertAdc": true,
+        "vrefAdc": "1200",
+        "serialPort": "/dev/ttyUSB0",
+        "lock": true,
+        "baudRate": "115200",
+        "dataBits": "8",
+        "stopBits": "1",
+        "parity": "none",
+        "bufferSize": "65536",
+        "rtscts": false,
+        "xon": false,
+        "xoff": false,
+        "xany": false,
+        "vmin": "1",
+        "vtime": "0"
+    },
+    {
+        "id": "2d846235.44966e",
+        "type": "ui_group",
+        "name": "Agro 1",
+        "tab": "716c7cdf.154a64",
+        "order": 3,
+        "disp": true,
+        "width": "7",
+        "collapse": true
+    },
+    {
+        "id": "716c7cdf.154a64",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "home",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f0a7b77d.7a6308",
+        "type": "ui_group",
+        "z": "e14295b9.942268",
+        "name": "Agro 2",
+        "tab": "716c7cdf.154a64",
+        "order": 3,
+        "disp": true,
+        "width": "7",
+        "collapse": true
+    },
+    {
+        "id": "ef63d4f8.765808",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "19997b20.4960bd",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bf08cc1.af461b",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Verifier",
+        "func": "let msg2 = {};\nlet len = msg.payload.length;\nlet panID1 = \"0x\" + msg.payload[0] + msg.payload[1];\nlet panID2 = \"0x\" + msg.payload[2] + msg.payload[3];\nmsg.panID1 = parseInt(panID1);\nmsg.panID2 = parseInt(panID2);\n\n\nif (len == 4 && !isNaN(msg.panID1) && !isNaN(msg.panID2))\n    node.send([msg, null]);\n\nelse if (isNaN(msg.panID1) || isNaN(msg.panID2)) {\n    msg2.payload = \"Input is not hexadecimal, try again!\";\n    msg.panID1 = \"error\";\n    msg.panID2 = \"error\";\n    node.send([msg, msg2]);\n}\n    \nelse if (len != 4) {\n    msg2.payload = \"Wrong input length, try again!\";\n    msg.panID1 = \"error\";\n    msg.panID2 = \"error\";\n    node.send([msg, msg2]);\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1100,
+        "y": 180,
+        "wires": [
+            [
+                "1b724737.986939",
+                "a1545d7e.708ce8"
+            ],
+            [
+                "9c97ad8.bec235"
+            ]
+        ]
+    },
+    {
+        "id": "1b724737.986939",
+        "type": "debug",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1350,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "9c97ad8.bec235",
+        "type": "ui_text_input",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "label": "Set PAN ID",
+        "tooltip": "Values from 0000 to FFFF in hex",
+        "group": "4754eb3d.0d2434",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "x": 970,
+        "y": 260,
+        "wires": [
+            [
+                "bf08cc1.af461b"
+            ]
+        ]
+    },
+    {
+        "id": "ec7eee64.a62aa",
+        "type": "ui_button",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "group": "4754eb3d.0d2434",
+        "order": 6,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Submit",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "x": 360,
+        "y": 420,
+        "wires": [
+            [
+                "4ebed89d.436a38",
+                "fe15cbaf.deae28"
+            ]
+        ]
+    },
+    {
+        "id": "ebb388cb.6f0558",
+        "type": "ui_button",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "group": "4754eb3d.0d2434",
+        "order": 7,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "label": "Clear",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "",
+        "x": 350,
+        "y": 320,
+        "wires": [
+            [
+                "4ebed89d.436a38",
+                "45608d1e.96803c",
+                "a83a23f2.ca042"
+            ]
+        ]
+    },
+    {
+        "id": "f753f198.c94bc",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Verifier",
+        "func": "let msg2 = {};\nlet len = msg.payload.length;\nlet CH = \"0x\" + msg.payload;\nmsg.CH = parseInt(CH);\n\n\nif (len == 2 && !isNaN(msg.CH))\n    node.send([msg, null]);\n    \nelse if (isNaN(msg.CH)){\n    msg2.payload = \"Input is not hexadecimal, try again!\";\n    msg.CH = \"error\";\n    node.send([msg, msg2]);\n}\n\nelse if (len != 2) {\n    msg2.payload = \"Wrong input length, try again!\";\n    msg.CH = \"error\";\n    node.send([msg, msg2]);\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1100,
+        "y": 320,
+        "wires": [
+            [
+                "70a13b14.102fec",
+                "239de1be.973e2e"
+            ],
+            [
+                "44b1a194.a2304"
+            ]
+        ]
+    },
+    {
+        "id": "70a13b14.102fec",
+        "type": "debug",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1350,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "44b1a194.a2304",
+        "type": "ui_text_input",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "label": "Set CHANNEL",
+        "tooltip": "Values from 0x0C to 0x17 in hex",
+        "group": "4754eb3d.0d2434",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "x": 980,
+        "y": 400,
+        "wires": [
+            [
+                "f753f198.c94bc"
+            ]
+        ]
+    },
+    {
+        "id": "d61d717c.2ecf68",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Verifier",
+        "func": "let msg2 = {};\nmsg2.payload = \"Wrong input length!\";\nlet len = msg.payload.length;\n\nif (len == 16 || len == 0)\n    node.send([msg, null]);\nelse {\n    msg.payload = \"error\";\n    node.send([msg, msg2]);\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1100,
+        "y": 600,
+        "wires": [
+            [
+                "81fb44c1.128a4",
+                "1ad1d75.4f55b29"
+            ],
+            [
+                "edb6b816.ac8ac8"
+            ]
+        ]
+    },
+    {
+        "id": "81fb44c1.128a4",
+        "type": "debug",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1350,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "edb6b816.ac8ac8",
+        "type": "ui_text_input",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "label": "Set ENCRYPTION",
+        "tooltip": "Define the AES 16-byte Encryption Key (EXACTLY 16 CHARACTERS)",
+        "group": "4754eb3d.0d2434",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "x": 990,
+        "y": 680,
+        "wires": [
+            [
+                "d61d717c.2ecf68"
+            ]
+        ]
+    },
+    {
+        "id": "cf5240a.d6cbfc",
+        "type": "ui_switch",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "label": "Encryption",
+        "tooltip": "",
+        "group": "4754eb3d.0d2434",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 970,
+        "y": 480,
+        "wires": [
+            [
+                "480dd879.329df8"
+            ]
+        ]
+    },
+    {
+        "id": "480dd879.329df8",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Set AES",
+        "func": "flow.set(\"AES\", msg.payload);\nmsg.enabled = msg.payload;\nmsg.payload = \"\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 960,
+        "y": 540,
+        "wires": [
+            [
+                "edb6b816.ac8ac8"
+            ]
+        ]
+    },
+    {
+        "id": "4ebed89d.436a38",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Clear/Submit",
+        "func": "if (msg.payload) {\n    msg.enabled = false;\n    msg.payload = \"Submitted\";\n}\n\nif (!msg.payload) {\n    msg.enabled = true;\n    msg.payload = \"\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 670,
+        "y": 360,
+        "wires": [
+            [
+                "9c97ad8.bec235",
+                "44b1a194.a2304",
+                "b4ae721c.39367",
+                "cf5240a.d6cbfc"
+            ]
+        ]
+    },
+    {
+        "id": "a1545d7e.708ce8",
+        "type": "change",
+        "z": "a7863da5.b3ad4",
+        "name": "Store panID",
+        "rules": [
+            {
+                "t": "set",
+                "p": "panID[0]",
+                "pt": "flow",
+                "to": "panID1",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "panID[1]",
+                "pt": "flow",
+                "to": "panID2",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1370,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "239de1be.973e2e",
+        "type": "change",
+        "z": "a7863da5.b3ad4",
+        "name": "Set channel",
+        "rules": [
+            {
+                "t": "set",
+                "p": "channel",
+                "pt": "flow",
+                "to": "CH",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1370,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1ad1d75.4f55b29",
+        "type": "change",
+        "z": "a7863da5.b3ad4",
+        "name": "Set enryption",
+        "rules": [
+            {
+                "t": "set",
+                "p": "encryption",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1370,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "57379aa4.d40d6c",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Submission verifier",
+        "func": "var panID = flow.get(\"panID\");\nvar ch = flow.get(\"channel\");\nvar en = flow.get(\"AES\");\nvar pw = flow.get(\"encryption\");\n\nif (panID != null) {\n    if (panID[0] == \"error\" || panID[1] == \"error\")\n    {\n        msg.payload = \"Wrong panID, try again!\";\n        node.send([msg,null]);\n    }\n}\n\nif (ch == \"error\") {\n    msg.payload = \"Wrong channel, try again!\";\n    node.send([msg,null]);\n}\n\nelse if (pw == \"error\" && en == true) {\n    msg.payload = \"Wrong AES key, try again!\";\n    node.send([msg,null]);\n}\n\nelse if (pw != null && en != true) {\n    msg.payload = \"Something went wrong, try again!\";\n    node.send([msg,null]);\n}\n\nelse {\n    if (panID == null) {\n        flow.set(\"panID[0]\", 0x07);\n        flow.set(\"panID[1]\", 0x09);\n        msg.payload = \"Default panID adjusted\";\n        node.send([null,msg]); \n    }\n    \n    if (ch == null) {\n        flow.set(\"channel\", 0x11);\n        msg.payload = \"Default channel adjusted\";\n        node.send([null,msg]); \n    }\n    \n    if (en == null || en == false) {\n        flow.set(\"AES\", true);\n    }\n    \n    if (pw == null) {\n        flow.set(\"encryption\", \"Saturn-encrypted\");\n        msg.payload = \"Default AES key adjusted\";\n        node.send([null,msg]); \n    }\n    \n    msg.payload = \"Connection succesfully initialized\";\n    node.send([null,msg]); \n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 450,
+        "y": 780,
+        "wires": [
+            [
+                "4452072f.30de5"
+            ],
+            [
+                "9fb51c72.6b2e58",
+                "61f758ad.d13ca"
+            ]
+        ]
+    },
+    {
+        "id": "4452072f.30de5",
+        "type": "ui_toast",
+        "z": "a7863da5.b3ad4",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "Warning",
+        "x": 740,
+        "y": 760,
+        "wires": [
+            [
+                "ebb388cb.6f0558"
+            ]
+        ]
+    },
+    {
+        "id": "45608d1e.96803c",
+        "type": "change",
+        "z": "a7863da5.b3ad4",
+        "name": "Clear context",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "panID",
+                "pt": "flow"
+            },
+            {
+                "t": "delete",
+                "p": "channel",
+                "pt": "flow"
+            },
+            {
+                "t": "delete",
+                "p": "AES",
+                "pt": "flow"
+            },
+            {
+                "t": "delete",
+                "p": "encryption",
+                "pt": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Parameters erased, submit new parameters.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 240,
+        "wires": [
+            [
+                "94378ecd.1b32f8"
+            ]
+        ]
+    },
+    {
+        "id": "9fb51c72.6b2e58",
+        "type": "ui_toast",
+        "z": "a7863da5.b3ad4",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "Green",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "Confirmation",
+        "x": 750,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "94378ecd.1b32f8",
+        "type": "ui_toast",
+        "z": "a7863da5.b3ad4",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "Red",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "Connection disabled!",
+        "name": "Confirmation",
+        "x": 670,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "31f18381.9d7434",
+        "type": "ui_button",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "group": "19997b20.4960bd",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Pair!",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 370,
+        "y": 1060,
+        "wires": [
+            [
+                "6702e845.0c37b"
+            ]
+        ]
+    },
+    {
+        "id": "55cc7c27.4d684c",
+        "type": "inject",
+        "z": "a7863da5.b3ad4",
+        "name": "Hide",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 530,
+        "y": 680,
+        "wires": [
+            [
+                "c5427c36.d38bb8"
+            ]
+        ]
+    },
+    {
+        "id": "c5427c36.d38bb8",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "func": "msg.enabled = msg.payload;\nmsg.payload = \"\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 760,
+        "y": 680,
+        "wires": [
+            [
+                "edb6b816.ac8ac8"
+            ]
+        ]
+    },
+    {
+        "id": "f76ace96.5ff04",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "func": "if(msg.payload == \"Submitted\")\n    msg.enabled = false;\nelse\n{\n    msg.enabled = \"\";\n    msg.payload = \"\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 660,
+        "y": 480,
+        "wires": [
+            [
+                "edb6b816.ac8ac8"
+            ]
+        ]
+    },
+    {
+        "id": "b4ae721c.39367",
+        "type": "delay",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 670,
+        "y": 420,
+        "wires": [
+            [
+                "f76ace96.5ff04"
+            ]
+        ]
+    },
+    {
+        "id": "5a0c0b4c.b2b30c",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Set PANID",
+        "func": "var pan = flow.get(\"panID\");\n//var pan1 = flow.get(\"panID[1]\");\n//var pan = pan0.toString().concat(pan1.toString())\n\nvar packet = {\n\ttype: 0x09, // xbee_api.constants.FRAME_TYPE.AT_COMMAND_QUEUE_PARAMETER_VALUE\n\tcommand: \"ID\",\n\tcommandParameter: [ pan[0] , pan[1] ]\n}\n\n//var myDataFrame = {\n//  type: 0x10,\n//  id: 0x01,\n//  destination64: \"0013a200400a0127\",\n//  destination16: \"fffe\",\n//  broadcastRadius: 0x00,\n//  options: 0x00,\n//  data: \"Hello from Node-RED!\"\n//};\n\nmsg.payload = packet;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 310,
+        "y": 1760,
+        "wires": [
+            [
+                "7556b0b4.3181e",
+                "4cf55007.b87268"
+            ]
+        ]
+    },
+    {
+        "id": "86ec1099.296e7",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Set CH",
+        "func": "var ch = flow.get(\"channel\");\n\nvar packet = {\n\ttype: 0x09, // xbee_api.constants.FRAME_TYPE.AT_COMMAND_QUEUE_PARAMETER_VALUE\n\tcommand: \"CH\",\n\tcommandParameter: [ch]\n}\n\nmsg.payload = packet;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 760,
+        "y": 1760,
+        "wires": [
+            [
+                "6ff2d499.045a14",
+                "2da97dea.76442a"
+            ]
+        ]
+    },
+    {
+        "id": "930190e7.6bf49",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Set AES",
+        "func": "var aes = flow.get(\"AES\") ? 1 : 0;\n\nvar packet = {\n\ttype: 0x09, // xbee_api.constants.FRAME_TYPE.AT_COMMAND_QUEUE_PARAMETER_VALUE\n\tcommand: \"EE\",\n\tcommandParameter: [ aes ]\n}\n\nmsg.payload = packet;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 300,
+        "y": 2040,
+        "wires": [
+            [
+                "94c10c20.76cca8",
+                "4cc2d83b.6d4088"
+            ]
+        ]
+    },
+    {
+        "id": "3e085bf3.44e8b4",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Write memory",
+        "func": "var packet = {\n\ttype: 0x09, // xbee_api.constants.FRAME_TYPE.AT_COMMAND_QUEUE_PARAMETER_VALUE\n\tcommand: \"WR\",\n\tcommandParameter: []\n}\n\nmsg.payload = packet;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1160,
+        "y": 2040,
+        "wires": [
+            [
+                "5c5fd723.6a6988",
+                "c5c71d7a.91c758"
+            ]
+        ]
+    },
+    {
+        "id": "d67a2deb.8dbd6",
+        "type": "debug",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1230,
+        "y": 2540,
+        "wires": []
+    },
+    {
+        "id": "7556b0b4.3181e",
+        "type": "delay",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 530,
+        "y": 1760,
+        "wires": [
+            [
+                "5e81fe94.141678"
+            ]
+        ]
+    },
+    {
+        "id": "6ff2d499.045a14",
+        "type": "delay",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 950,
+        "y": 1760,
+        "wires": [
+            [
+                "563cbb64.9ca044"
+            ]
+        ]
+    },
+    {
+        "id": "94c10c20.76cca8",
+        "type": "delay",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 490,
+        "y": 2040,
+        "wires": [
+            [
+                "60659653.e8b4d8"
+            ]
+        ]
+    },
+    {
+        "id": "5e81fe94.141678",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Verifier",
+        "func": "let msg2 = {};\nmsg2.payload = \"Resend\";\nmsg.payload = \"Set CH\"\n\nlet typ = flow.get(\"lastPacket.command\");\nlet rslt = flow.get(\"lastPacket.commandStatus\");\n\nif (typ == \"ID\" && rslt == 0)\n    node.send([msg, null]);\nelse {\n    node.send([null,msg2])\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 540,
+        "y": 1660,
+        "wires": [
+            [
+                "86ec1099.296e7"
+            ],
+            [
+                "5a0c0b4c.b2b30c"
+            ]
+        ]
+    },
+    {
+        "id": "f1294263.00a8d8",
+        "type": "change",
+        "z": "a7863da5.b3ad4",
+        "name": "Set lastPacket",
+        "rules": [
+            {
+                "t": "set",
+                "p": "lastPacket",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "lastPacket",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 2540,
+        "wires": [
+            [
+                "d67a2deb.8dbd6"
+            ]
+        ]
+    },
+    {
+        "id": "60659653.e8b4d8",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Verifier",
+        "func": "let msg2 = {};\nmsg2.payload = \"Resend\";\nmsg.payload = \"Set PW\"\n\nlet typ = flow.get(\"lastPacket.command\");\nlet rslt = flow.get(\"lastPacket.commandStatus\");\n\nif (typ == \"EE\" && rslt == 0)\n    node.send([msg, null]);\nelse {\n    node.send([null,msg2])\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 500,
+        "y": 1940,
+        "wires": [
+            [
+                "76fd76d0.ca546"
+            ],
+            [
+                "930190e7.6bf49"
+            ]
+        ]
+    },
+    {
+        "id": "563cbb64.9ca044",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Verifier",
+        "func": "let msg2 = {};\nmsg2.payload = \"Resend\";\nmsg.payload = \"Set AES\"\n\nlet typ = flow.get(\"lastPacket.command\");\nlet rslt = flow.get(\"lastPacket.commandStatus\");\n\nif (typ == \"CH\" && rslt == 0)\n    node.send([msg, null]);\nelse {\n    node.send([null,msg2])\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 960,
+        "y": 1660,
+        "wires": [
+            [
+                "930190e7.6bf49"
+            ],
+            [
+                "86ec1099.296e7"
+            ]
+        ]
+    },
+    {
+        "id": "29d67c22.3ee034",
+        "type": "delay",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 550,
+        "y": 2340,
+        "wires": [
+            [
+                "590b5208.4431b4"
+            ]
+        ]
+    },
+    {
+        "id": "590b5208.4431b4",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Verifier",
+        "func": "let msg2 = {};\nmsg2.payload = \"Resend\";\nmsg.payload = \"Waiting for response...\"\n\nlet typ = flow.get(\"lastPacket.command\");\nlet rslt = flow.get(\"lastPacket.commandStatus\");\n\nif (typ == \"AC\" && rslt == 0)\n    node.send([msg, null]);\nelse {\n    node.send([null,msg2])\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 2240,
+        "wires": [
+            [
+                "a44cf86c.96bad",
+                "8eced86f.eb9098"
+            ],
+            [
+                "217a47e1.43a378"
+            ]
+        ]
+    },
+    {
+        "id": "a44cf86c.96bad",
+        "type": "ui_toast",
+        "z": "a7863da5.b3ad4",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "Green",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "Confirmation",
+        "x": 770,
+        "y": 2240,
+        "wires": []
+    },
+    {
+        "id": "61f758ad.d13ca",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "func": "msg.enabled = true;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 200,
+        "y": 1060,
+        "wires": [
+            [
+                "31f18381.9d7434"
+            ]
+        ]
+    },
+    {
+        "id": "75289604.78c62",
+        "type": "inject",
+        "z": "a7863da5.b3ad4",
+        "name": "Hide",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 190,
+        "y": 1160,
+        "wires": [
+            [
+                "a83a23f2.ca042"
+            ]
+        ]
+    },
+    {
+        "id": "a83a23f2.ca042",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "func": "msg.enabled = msg.payload;\nmsg.payload = \"\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 360,
+        "y": 1160,
+        "wires": [
+            [
+                "31f18381.9d7434"
+            ]
+        ]
+    },
+    {
+        "id": "fe15cbaf.deae28",
+        "type": "delay",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 270,
+        "y": 780,
+        "wires": [
+            [
+                "57379aa4.d40d6c"
+            ]
+        ]
+    },
+    {
+        "id": "7d1d054e.238464",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Advertisement",
+        "func": "var pan = flow.get(\"panID\");\nvar ch = flow.get(\"channel\");\nvar aes = flow.get(\"AES\") ? 1 : 0;\nvar pw = flow.get(\"encryption\");\n\nvar config = \"#PAN_ID:\".concat(pan[0]).concat(\";\").concat(pan[1]).concat(\"#CH:\").concat(ch).concat(\"#ENCRY:\").concat(aes).concat(\"#PW:\").concat(pw).concat(\"#\");\n\n//msg.payload = {\"PAN_ID:\" : pan, \"CH:\" : ch, \"ENCRY:\" : aes, \"PW:\" : pw};\n\nvar packet = {\n\ttype: 0x00, // xbee_api.constants.FRAME_TYPE.TX_REQUEST_64 \n\tdestination64: \"000000000000ffff\",\n\toptions: 0x00, // optional, 0x00 is default\n\tdata: config // Can either be string or byte array.\n}\n\nmsg.payload = packet;\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1300,
+        "y": 1620,
+        "wires": [
+            [
+                "b5563df4.97ca7",
+                "687989d0.00a378"
+            ]
+        ]
+    },
+    {
+        "id": "6702e845.0c37b",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Set PANID",
+        "func": "var packet = {\n\ttype: 0x09, // xbee_api.constants.FRAME_TYPE.AT_COMMAND_QUEUE_PARAMETER_VALUE\n\tcommand: \"ID\",\n\tcommandParameter: [ 0x07 , 0x09 ]\n}\n\n//var myDataFrame = {\n//  type: 0x10,\n//  id: 0x01,\n//  destination64: \"0013a200400a0127\",\n//  destination16: \"fffe\",\n//  broadcastRadius: 0x00,\n//  options: 0x00,\n//  data: \"Hello from Node-RED!\"\n//};\n\nmsg.payload = packet;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 570,
+        "y": 1060,
+        "wires": [
+            [
+                "98fff84e.a04e08",
+                "71a69112.0332b8"
+            ]
+        ]
+    },
+    {
+        "id": "918bfa26.2a0298",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Set CH",
+        "func": "var packet = {\n\ttype: 0x09, // xbee_api.constants.FRAME_TYPE.AT_COMMAND_QUEUE_PARAMETER_VALUE\n\tcommand: \"CH\",\n\tcommandParameter: [ 0x11 ]\n}\n\nmsg.payload = packet;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1020,
+        "y": 1060,
+        "wires": [
+            [
+                "8bb1c4b.a4dab38",
+                "24f51bc0.622ea4"
+            ]
+        ]
+    },
+    {
+        "id": "520b987.6325b68",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Set AES",
+        "func": "var packet = {\n\ttype: 0x09, // xbee_api.constants.FRAME_TYPE.AT_COMMAND_QUEUE_PARAMETER_VALUE\n\tcommand: \"EE\",\n\tcommandParameter: [ 0 ]\n}\n\nmsg.payload = packet;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 300,
+        "y": 1380,
+        "wires": [
+            [
+                "167ff74d.39e459",
+                "130f0cf3.bf00db"
+            ]
+        ]
+    },
+    {
+        "id": "1ed56ee3.979da1",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Write memory",
+        "func": "var packet = {\n\ttype: 0x09, // xbee_api.constants.FRAME_TYPE.AT_COMMAND_QUEUE_PARAMETER_VALUE\n\tcommand: \"WR\",\n\tcommandParameter: []\n}\n\nmsg.payload = packet;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 740,
+        "y": 1380,
+        "wires": [
+            [
+                "18c4e82a.8a2c5",
+                "2f448d36.34593a"
+            ]
+        ]
+    },
+    {
+        "id": "98fff84e.a04e08",
+        "type": "delay",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 790,
+        "y": 1060,
+        "wires": [
+            [
+                "54b1cf8e.9ab59"
+            ]
+        ]
+    },
+    {
+        "id": "8bb1c4b.a4dab38",
+        "type": "delay",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 1210,
+        "y": 1060,
+        "wires": [
+            [
+                "f9a23c23.e8da18"
+            ]
+        ]
+    },
+    {
+        "id": "167ff74d.39e459",
+        "type": "delay",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 490,
+        "y": 1380,
+        "wires": [
+            [
+                "b5259ad5.cdf91"
+            ]
+        ]
+    },
+    {
+        "id": "54b1cf8e.9ab59",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Verifier",
+        "func": "let msg2 = {};\nmsg2.payload = \"Resend\";\nmsg.payload = \"Set CH\"\n\nlet typ = flow.get(\"lastPacket.command\");\nlet rslt = flow.get(\"lastPacket.commandStatus\");\n\nif (typ == \"ID\" && rslt == 0)\n    node.send([msg, null]);\nelse {\n    node.send([null,msg2])\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 800,
+        "y": 960,
+        "wires": [
+            [
+                "918bfa26.2a0298"
+            ],
+            [
+                "6702e845.0c37b"
+            ]
+        ]
+    },
+    {
+        "id": "b5259ad5.cdf91",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Verifier",
+        "func": "let msg2 = {};\nmsg2.payload = \"Resend\";\nmsg.payload = \"Set PW\"\n\nlet typ = flow.get(\"lastPacket.command\");\nlet rslt = flow.get(\"lastPacket.commandStatus\");\n\nif (typ == \"EE\" && rslt == 0)\n    node.send([msg, null]);\nelse {\n    node.send([null,msg2])\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 500,
+        "y": 1280,
+        "wires": [
+            [
+                "1ed56ee3.979da1"
+            ],
+            [
+                "520b987.6325b68"
+            ]
+        ]
+    },
+    {
+        "id": "f9a23c23.e8da18",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Verifier",
+        "func": "let msg2 = {};\nmsg2.payload = \"Resend\";\nmsg.payload = \"Set AES\"\n\nlet typ = flow.get(\"lastPacket.command\");\nlet rslt = flow.get(\"lastPacket.commandStatus\");\n\nif (typ == \"CH\" && rslt == 0)\n    node.send([msg, null]);\nelse {\n    node.send([null,msg2])\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1220,
+        "y": 960,
+        "wires": [
+            [
+                "520b987.6325b68"
+            ],
+            [
+                "918bfa26.2a0298"
+            ]
+        ]
+    },
+    {
+        "id": "f125d2a0.dce4e",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Verifier",
+        "func": "let msg2 = {};\nmsg2.payload = \"Resend\";\nmsg.payload = \"Success\"\n\nlet typ = flow.get(\"lastPacket.command\");\nlet rslt = flow.get(\"lastPacket.commandStatus\");\n\nif (typ == \"AC\" && rslt == 0)\n    node.send([msg, null]);\nelse {\n    flow.set(\"attempt\", 0);\n    node.send([null,msg2])\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1420,
+        "y": 1280,
+        "wires": [
+            [
+                "578f0313.8db0dc",
+                "7d1d054e.238464"
+            ],
+            [
+                "d8fdd151.fa889"
+            ]
+        ]
+    },
+    {
+        "id": "578f0313.8db0dc",
+        "type": "ui_toast",
+        "z": "a7863da5.b3ad4",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "Green",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "Confirmation",
+        "x": 1650,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "a314db4f.e5a66",
+        "type": "xbee-rx",
+        "z": "a7863da5.b3ad4",
+        "name": "Dominus",
+        "xBee": "49beb9b1.c88ee8",
+        "x": 740,
+        "y": 2540,
+        "wires": [
+            [
+                "f1294263.00a8d8",
+                "ed40a2f3.c257a8"
+            ]
+        ]
+    },
+    {
+        "id": "cc6808df.198d78",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Verifier",
+        "func": "let msg2 = {}, msg3 = {};\nmsg3.payload = \"Connection error, restart the system to fix.\"\nmsg2.payload = \"Resend\";\nmsg.payload = \"Searching for agros...\"\n\nlet typ = flow.get(\"lastPacket.type\");\nlet rslt = flow.get(\"lastPacket.deliveryStatus\");\nlet att = 0;\n\nif (typ == 137 && rslt == 0)\n    node.send([msg, null, null]);\nelse if (att > 10)\n    node.send([null, null, msg3])\nelse\n    node.send([null, msg2, null])\n",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1480,
+        "y": 1500,
+        "wires": [
+            [
+                "652fe57f.e6e2f4",
+                "5a0c0b4c.b2b30c"
+            ],
+            [
+                "7d1d054e.238464"
+            ],
+            [
+                "a570f3d0.e6c4e"
+            ]
+        ]
+    },
+    {
+        "id": "b5563df4.97ca7",
+        "type": "delay",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "200",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 1490,
+        "y": 1620,
+        "wires": [
+            [
+                "cc6808df.198d78"
+            ]
+        ]
+    },
+    {
+        "id": "a570f3d0.e6c4e",
+        "type": "ui_toast",
+        "z": "a7863da5.b3ad4",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "Warning",
+        "x": 1700,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "652fe57f.e6e2f4",
+        "type": "ui_toast",
+        "z": "a7863da5.b3ad4",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "Green",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "Confirmation",
+        "x": 1710,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "76fd76d0.ca546",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Set PW",
+        "func": "var pw = flow.get(\"encryption\");\n\nvar hexKey = [];\nfor (var i = 0; i < pw.length; i ++)\n  hexKey.push(pw[i].charCodeAt(0));\n\nvar packet = {\n\ttype: 0x09, // xbee_api.constants.FRAME_TYPE.AT_COMMAND_QUEUE_PARAMETER_VALUE\n\tcommand: \"KY\",\n\tcommandParameter: pw\n}\n\nmsg.payload = packet;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 720,
+        "y": 2040,
+        "wires": [
+            [
+                "a3d52a03.2dada",
+                "845f7f28.d644d",
+                "d77c5bb8.7dd43"
+            ]
+        ]
+    },
+    {
+        "id": "a3d52a03.2dada",
+        "type": "delay",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 910,
+        "y": 2040,
+        "wires": [
+            [
+                "87a5981c.26b758"
+            ]
+        ]
+    },
+    {
+        "id": "87a5981c.26b758",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Verifier",
+        "func": "let msg2 = {};\nmsg2.payload = \"Resend\";\nmsg.payload = \"Write values\"\n\nlet typ = flow.get(\"lastPacket.command\");\nlet rslt = flow.get(\"lastPacket.commandStatus\");\n\nif (typ == \"KY\" && rslt == 0)\n    node.send([msg, null]);\nelse {\n    node.send([null,msg2])\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 920,
+        "y": 1940,
+        "wires": [
+            [
+                "3e085bf3.44e8b4"
+            ],
+            [
+                "76fd76d0.ca546"
+            ]
+        ]
+    },
+    {
+        "id": "845f7f28.d644d",
+        "type": "debug",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 923,
+        "y": 1879,
+        "wires": []
+    },
+    {
+        "id": "1c5a11e4.0dea36",
+        "type": "ui_gauge",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "group": "2d846235.44966e",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Air temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-30",
+        "max": "60",
+        "colors": [
+            "#00c4ff",
+            "#00e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 640,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "4e070e80.68a3c8",
+        "type": "debug",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "b83e651a.855638",
+        "type": "link in",
+        "z": "edd64c81.e7c368",
+        "name": "",
+        "links": [
+            "ed40a2f3.c257a8"
+        ],
+        "x": 435,
+        "y": 280,
+        "wires": [
+            [
+                "4a46c74d.1cc118"
+            ]
+        ]
+    },
+    {
+        "id": "ed40a2f3.c257a8",
+        "type": "link out",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "links": [
+            "b83e651a.855638"
+        ],
+        "x": 915,
+        "y": 2600,
+        "wires": []
+    },
+    {
+        "id": "4a46c74d.1cc118",
+        "type": "change",
+        "z": "edd64c81.e7c368",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "lastPacket.data",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 280,
+        "wires": [
+            [
+                "ea474169.454548"
+            ]
+        ]
+    },
+    {
+        "id": "b924109a.313648",
+        "type": "ui_chart",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "group": "2d846235.44966e",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 610,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "889023e4.4747b8",
+        "type": "smooth",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "6",
+        "round": "2",
+        "mult": "single",
+        "reduce": false,
+        "x": 440,
+        "y": 120,
+        "wires": [
+            [
+                "1c5a11e4.0dea36",
+                "b924109a.313648",
+                "4e070e80.68a3c8"
+            ]
+        ]
+    },
+    {
+        "id": "e71dad3b.a9acb",
+        "type": "ui_gauge",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "group": "2d846235.44966e",
+        "order": 4,
+        "width": "7",
+        "height": "6",
+        "gtype": "wave",
+        "title": "Rain intensity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00c4ff",
+            "#00e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 660,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "abc575a7.d3d0d8",
+        "type": "debug",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "e3fab7be.dc4af8",
+        "type": "ui_chart",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "group": "2d846235.44966e",
+        "order": 5,
+        "width": "0",
+        "height": "0",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 630,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6908a919.831548",
+        "type": "smooth",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "6",
+        "round": "2",
+        "mult": "single",
+        "reduce": false,
+        "x": 460,
+        "y": 400,
+        "wires": [
+            [
+                "e71dad3b.a9acb",
+                "e3fab7be.dc4af8",
+                "abc575a7.d3d0d8"
+            ]
+        ]
+    },
+    {
+        "id": "dae22073.b583d",
+        "type": "ui_gauge",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "group": "2d846235.44966e",
+        "order": 6,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Pressure",
+        "label": "hPa",
+        "format": "{{value}}",
+        "min": "800",
+        "max": "1200",
+        "colors": [
+            "#00c4ff",
+            "#00e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 640,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "53c61e2.9c1386",
+        "type": "debug",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "ea3f5fe3.559e38",
+        "type": "ui_chart",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "group": "2d846235.44966e",
+        "order": 7,
+        "width": "0",
+        "height": "0",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "800",
+        "ymax": "1200",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 630,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "34857b82.771c3c",
+        "type": "smooth",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "6",
+        "round": "2",
+        "mult": "single",
+        "reduce": false,
+        "x": 460,
+        "y": 680,
+        "wires": [
+            [
+                "dae22073.b583d",
+                "ea3f5fe3.559e38",
+                "53c61e2.9c1386"
+            ]
+        ]
+    },
+    {
+        "id": "c3ce1ce8.7b7b8",
+        "type": "ui_gauge",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "group": "2d846235.44966e",
+        "order": 8,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Light",
+        "label": "",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "10000",
+        "colors": [
+            "#000080",
+            "#c0c0c0",
+            "#ffff80"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 630,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "68f4afbb.4df7d8",
+        "type": "function",
+        "z": "27cd4eae.5a94e2",
+        "name": "state to finished html icon",
+        "func": "var moon = \"wi wi-darksky-clear-night\";\nvar rain = \"wi wi-darksky-rain\";\nvar sun = \"wi wi-darksky-clear-day\";\nvar cloud = \"wi wi-darksky-partly-cloudy-day\";\n\ncontext.rain = context.rain || 5;\ncontext.light = context.light || 0.5;\ncontext.pressure = context.pressure || 1000;\n\nif(msg.topic === 'Rain' && msg.payload != 'nan')\n    context.rain = msg.payload;\nif(msg.topic === 'Luminosity' && msg.payload != 'nan')\n    context.light = msg.payload;\nif(msg.topic === 'Pressure' && msg.payload != 'nan')\n    context.pressure = msg.payload;\n\nif(context.rain < 10)\n{\n    if(context.light > 400)\n        msg.payload = sun;\n    else if (context.light > 2 && context.light < 400)\n        msg.payload = cloud;\n    else\n        msg.payload = moon;\n}\nelse\n    msg.payload = rain;\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 570,
+        "y": 1020,
+        "wires": [
+            [
+                "586f851f.f02c0c"
+            ]
+        ]
+    },
+    {
+        "id": "586f851f.f02c0c",
+        "type": "ui_template",
+        "z": "27cd4eae.5a94e2",
+        "group": "2d846235.44966e",
+        "name": "Weather symbol",
+        "order": 9,
+        "width": "7",
+        "height": "6",
+        "format": "<div class=\"{{msg.payload}}\" style=\"color:#FF7D00; font-size: 120pt; text-align: center; margin: auto\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 800,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "28778adb.c61246",
+        "type": "ui_gauge",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "group": "2d846235.44966e",
+        "order": 10,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "UV",
+        "label": "",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "11",
+        "colors": [
+            "#000080",
+            "#c0c0c0",
+            "#ffff80"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 630,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "bc22ae58.53b23",
+        "type": "ui_chart",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "group": "2d846235.44966e",
+        "order": 11,
+        "width": "0",
+        "height": "0",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 630,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2d15a0f8.809f3",
+        "type": "smooth",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "6",
+        "round": "2",
+        "mult": "single",
+        "reduce": false,
+        "x": 460,
+        "y": 1140,
+        "wires": [
+            [
+                "28778adb.c61246",
+                "bc22ae58.53b23"
+            ]
+        ]
+    },
+    {
+        "id": "8e570246.a3e12",
+        "type": "ui_gauge",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "group": "2d846235.44966e",
+        "order": 12,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Soil temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-30",
+        "max": "60",
+        "colors": [
+            "#00c4ff",
+            "#00e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 660,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "95df1e97.1021f8",
+        "type": "debug",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "13a979a.7bf5586",
+        "type": "ui_chart",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "group": "2d846235.44966e",
+        "order": 13,
+        "width": "0",
+        "height": "0",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 630,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1e8cc7de.76d1",
+        "type": "smooth",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "6",
+        "round": "2",
+        "mult": "single",
+        "reduce": false,
+        "x": 460,
+        "y": 1340,
+        "wires": [
+            [
+                "8e570246.a3e12",
+                "13a979a.7bf5586",
+                "95df1e97.1021f8"
+            ]
+        ]
+    },
+    {
+        "id": "b76f5423.44db88",
+        "type": "ui_gauge",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "group": "2d846235.44966e",
+        "order": 14,
+        "width": "7",
+        "height": "6",
+        "gtype": "wave",
+        "title": "Soil moisture",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00c4ff",
+            "#00e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 650,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "d558e3ab.457d48",
+        "type": "debug",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "49cd558e.3a10bc",
+        "type": "ui_chart",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "group": "2d846235.44966e",
+        "order": 15,
+        "width": "0",
+        "height": "0",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 630,
+        "y": 1680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8ef86d67.830c7",
+        "type": "smooth",
+        "z": "27cd4eae.5a94e2",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "6",
+        "round": "2",
+        "mult": "single",
+        "reduce": false,
+        "x": 460,
+        "y": 1640,
+        "wires": [
+            [
+                "b76f5423.44db88",
+                "49cd558e.3a10bc",
+                "d558e3ab.457d48"
+            ]
+        ]
+    },
+    {
+        "id": "7546d7c7.c0524",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Agricola recognition",
+        "func": "var adv = flow.get(\"lastPacket\")\n\nvar feed = adv.data.toString().match(\"#STR:(.*)#\")\n\nif (feed[1] == \"Agro PAIRED\")\n{\n    msg.rx = adv.remote64;\n    node.send([null,msg]);\n}\nelse\n{\n    msg.payload = \"Agricola unreachable! Try again.\";\n    node.send([msg,null]);\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 990,
+        "y": 2340,
+        "wires": [
+            [
+                "6be72986.b1cac8"
+            ],
+            [
+                "45cc8c94.3c90a4"
+            ]
+        ]
+    },
+    {
+        "id": "6be72986.b1cac8",
+        "type": "ui_toast",
+        "z": "a7863da5.b3ad4",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "Warning",
+        "x": 1080,
+        "y": 2240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eef5d0fc.2b93d8",
+        "type": "xbee-tx",
+        "z": "a7863da5.b3ad4",
+        "name": "Dominus",
+        "xBee": "49beb9b1.c88ee8",
+        "x": 1700,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "8eced86f.eb9098",
+        "type": "delay",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 780,
+        "y": 2340,
+        "wires": [
+            [
+                "7546d7c7.c0524"
+            ]
+        ]
+    },
+    {
+        "id": "45cc8c94.3c90a4",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Start command",
+        "func": "var ord;\nvar dic = global.get(\"Agricolae\");\nvar date = (new Date()).toISOString().match(\"(.*)T\")[1];\nvar time = (new Date()).toISOString().match(\"T(.*)Z\")[1];\n\nif (dic == null || dic == undefined)\n{\n    ord = 0;\n    dic = [];\n}\nelse\n    ord = dic.length;\n    \nif (dic.indexOf(msg.rx) < 0)\n{\n    dic.push(msg.rx);\n    ord++;\n    global.set(\"Agricolae\", dic);\n}\nelse\n    ord = dic.indexOf(msg.rx)+1;\n\nvar packet = {\n\ttype: 0x00, // xbee_api.constants.FRAME_TYPE.TX_REQUEST_64 \n\tdestination64: msg.rx,\n\toptions: 0x00, // optional, 0x00 is default\n\tdata: \"#DATE:\" + date + \"-\" + (new Date()).getDay() + \"#TIME:\" + time + \"#ORDER:\" + ord.toString() + \"#\" // Can either be string or byte array.\n}\n\n\nmsg.payload = packet;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1260,
+        "y": 2340,
+        "wires": [
+            [
+                "7c95c49e.9ee974",
+                "e73f95c1.8b8e78"
+            ]
+        ]
+    },
+    {
+        "id": "747de216.ba2634",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Verifier",
+        "func": "let msg2 = {}, msg3 = {};\nmsg2.rx = msg.rx\nmsg3.payload = \"Connection error, try again.\"\nmsg2.payload = \"Resend\";\nmsg.payload = \"Starting system...\"\n\nlet typ = flow.get(\"lastPacket.type\");\nlet rslt = flow.get(\"lastPacket.deliveryStatus\");\nlet att = 0;\n\nif (typ == 137 && rslt == 0)\n    node.send([msg, null, null]);\nelse if (att > 10)\n    node.send([null, null, msg3]);\nelse\n{\n    att++;\n    node.send([null, msg2, null]);\n}",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1500,
+        "y": 2220,
+        "wires": [
+            [
+                "c211a290.39ea",
+                "92e5b81a.832308"
+            ],
+            [
+                "45cc8c94.3c90a4"
+            ],
+            [
+                "2c0de046.282b7"
+            ]
+        ]
+    },
+    {
+        "id": "7c95c49e.9ee974",
+        "type": "delay",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "200",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 1510,
+        "y": 2340,
+        "wires": [
+            [
+                "747de216.ba2634"
+            ]
+        ]
+    },
+    {
+        "id": "2c0de046.282b7",
+        "type": "ui_toast",
+        "z": "a7863da5.b3ad4",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "Warning",
+        "x": 1700,
+        "y": 2220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c211a290.39ea",
+        "type": "ui_toast",
+        "z": "a7863da5.b3ad4",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "Green",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "Confirmation",
+        "x": 1710,
+        "y": 2180,
+        "wires": []
+    },
+    {
+        "id": "5060766.6f72988",
+        "type": "delay",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 1410,
+        "y": 1380,
+        "wires": [
+            [
+                "f125d2a0.dce4e"
+            ]
+        ]
+    },
+    {
+        "id": "18c4e82a.8a2c5",
+        "type": "delay",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 950,
+        "y": 1380,
+        "wires": [
+            [
+                "fc30faf6.554c7"
+            ]
+        ]
+    },
+    {
+        "id": "fc30faf6.554c7",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Verifier",
+        "func": "let msg2 = {};\nmsg2.payload = \"Resend\";\nmsg.payload = \"Success\"\n\nlet typ = flow.get(\"lastPacket.command\");\nlet rslt = flow.get(\"lastPacket.commandStatus\");\n\nif (typ == \"WR\" && rslt == 0)\n    node.send([msg, null]);\nelse {\n    flow.set(\"attempt\", 0);\n    node.send([null,msg2])\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 960,
+        "y": 1280,
+        "wires": [
+            [
+                "d8fdd151.fa889"
+            ],
+            [
+                "1ed56ee3.979da1"
+            ]
+        ]
+    },
+    {
+        "id": "d8fdd151.fa889",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Apply changes",
+        "func": "var packet = {\n\ttype: 0x09, // xbee_api.constants.FRAME_TYPE.AT_COMMAND_QUEUE_PARAMETER_VALUE\n\tcommand: \"AC\",\n\tcommandParameter: []\n}\n\nmsg.payload = packet;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1200,
+        "y": 1380,
+        "wires": [
+            [
+                "5060766.6f72988",
+                "9f945a29.946f28"
+            ]
+        ]
+    },
+    {
+        "id": "5c5fd723.6a6988",
+        "type": "delay",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 1370,
+        "y": 2040,
+        "wires": [
+            [
+                "ed93ddd5.a83898"
+            ]
+        ]
+    },
+    {
+        "id": "ed93ddd5.a83898",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Verifier",
+        "func": "let msg2 = {};\nmsg2.payload = \"Resend\";\nmsg.payload = \"Success\"\n\nlet typ = flow.get(\"lastPacket.command\");\nlet rslt = flow.get(\"lastPacket.commandStatus\");\n\nif (typ == \"WR\" && rslt == 0)\n    node.send([msg, null]);\nelse {\n    flow.set(\"attempt\", 0);\n    node.send([null,msg2])\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1380,
+        "y": 1940,
+        "wires": [
+            [
+                "217a47e1.43a378"
+            ],
+            [
+                "3e085bf3.44e8b4"
+            ]
+        ]
+    },
+    {
+        "id": "217a47e1.43a378",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Apply changes",
+        "func": "var packet = {\n\ttype: 0x09, // xbee_api.constants.FRAME_TYPE.AT_COMMAND_QUEUE_PARAMETER_VALUE\n\tcommand: \"AC\",\n\tcommandParameter: []\n}\n\nmsg.payload = packet;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 320,
+        "y": 2340,
+        "wires": [
+            [
+                "29d67c22.3ee034",
+                "4e95cc43.081fcc"
+            ]
+        ]
+    },
+    {
+        "id": "7fb730bb.dc0e7",
+        "type": "inject",
+        "z": "edd64c81.e7c368",
+        "name": "Initialize UI",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 590,
+        "y": 560,
+        "wires": [
+            [
+                "a7a0d71e.59169"
+            ]
+        ]
+    },
+    {
+        "id": "a7a0d71e.59169",
+        "type": "function",
+        "z": "edd64c81.e7c368",
+        "name": "",
+        "func": "if (global.get(\"Agricolae\") == null || global.get(\"Agricolae\") == undefined)\n    msg.payload = {\"group\": {\"hide\": [\"Home_Agro_1\", \"Home_Agro_2\"]}};\n    \nelse if (global.get(\"Agricolae\").length == 1)\n    msg.payload = {\"group\": {\"hide\": [\"Home_Agro_2\"]}};\n\nelse if (global.get(\"Agricolae\").length == 2)\n    msg.payload = {\"group\": {\"show\": [\"Home_Agro_1\", \"Home_Agro_2\"]}};\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 800,
+        "y": 560,
+        "wires": [
+            [
+                "9436b7f6.520878"
+            ]
+        ]
+    },
+    {
+        "id": "9436b7f6.520878",
+        "type": "ui_ui_control",
+        "z": "edd64c81.e7c368",
+        "name": "",
+        "events": "all",
+        "x": 1000,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "698f2299.5dd54c",
+        "type": "function",
+        "z": "27cd4eae.5a94e2",
+        "name": "Get data",
+        "func": "let msg2 = {};\nlet msg3 = {};\nlet msg4 = {};\nlet msg5 = {};\nlet msg6 = {};\nlet msg7 = {};\n\nvar airTemp = msg.payload.toString().match(\"#TC:(.*)#P\");\nvar rainIndex = msg.payload.toString().match(\"#R:(.*)#TSC\");\nvar atmPress = msg.payload.toString().match(\"#P:(.*)#L\");\nvar luxIndex = msg.payload.toString().match(\"#L:(.*)#UV\");\nvar UVIndex = msg.payload.toString().match(\"#UV:(.*)#R\");\nvar soilTemp = msg.payload.toString().match(\"#TSC:(.*)#M\");\nvar soilMoist = msg.payload.toString().match(\"#M:(.*)#BAT\")\n\nmsg.topic = \"Temperature\";\nmsg.payload = airTemp[1];\n\nnode.send([msg, null, null, null, null, null, null]);\n\nmsg2.topic = \"Rain\";\nmsg2.payload = rainIndex[1];\n\nnode.send([null, msg2, null, null, null, null, null]);\n\nmsg3.topic = \"Pressure\";\nmsg3.payload = atmPress[1];\n\nnode.send([null, null, msg3, null, null, null, null]);\n\nmsg4.topic = \"Luminosity\"\nmsg4.payload = luxIndex[1]\n\nnode.send([null, null, null, msg4, null, null, null]);\n\nmsg5.topic = \"UV index\"\nmsg5.payload = UVIndex[1]\n\nnode.send([null, null, null, null, msg5, null, null]);\n\nmsg6.topic = \"Temperature\"\nmsg6.payload = soilTemp[1]\n\nnode.send([null, null, null, null, null, msg6, null]);\n\nmsg7.topic = \"Moisture\"\nmsg7.payload = soilMoist[1]\n\nnode.send([null, null, null, null, null, null, msg7]);\n",
+        "outputs": 7,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 200,
+        "y": 740,
+        "wires": [
+            [
+                "889023e4.4747b8"
+            ],
+            [
+                "6908a919.831548",
+                "68f4afbb.4df7d8"
+            ],
+            [
+                "34857b82.771c3c",
+                "68f4afbb.4df7d8"
+            ],
+            [
+                "c3ce1ce8.7b7b8",
+                "68f4afbb.4df7d8"
+            ],
+            [
+                "2d15a0f8.809f3"
+            ],
+            [
+                "1e8cc7de.76d1"
+            ],
+            [
+                "8ef86d67.830c7"
+            ]
+        ]
+    },
+    {
+        "id": "5f31a5a3.61c90c",
+        "type": "subflow:27cd4eae.5a94e2",
+        "z": "edd64c81.e7c368",
+        "name": "Agro 1",
+        "env": [],
+        "x": 1010,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9e3203b9.176238",
+        "type": "ui_gauge",
+        "z": "e14295b9.942268",
+        "name": "",
+        "group": "f0a7b77d.7a6308",
+        "order": 4,
+        "width": "7",
+        "height": "6",
+        "gtype": "wave",
+        "title": "Rain intensity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00c4ff",
+            "#00e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 660,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "7b13ac72.f276ec",
+        "type": "debug",
+        "z": "e14295b9.942268",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "90af5f7.dd1cb2",
+        "type": "ui_chart",
+        "z": "e14295b9.942268",
+        "name": "",
+        "group": "f0a7b77d.7a6308",
+        "order": 5,
+        "width": "0",
+        "height": "0",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 630,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "448827f1.5032e",
+        "type": "smooth",
+        "z": "e14295b9.942268",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "6",
+        "round": "2",
+        "mult": "single",
+        "reduce": false,
+        "x": 460,
+        "y": 400,
+        "wires": [
+            [
+                "9e3203b9.176238",
+                "90af5f7.dd1cb2",
+                "7b13ac72.f276ec"
+            ]
+        ]
+    },
+    {
+        "id": "37c5dd5c.0bc9c2",
+        "type": "ui_gauge",
+        "z": "e14295b9.942268",
+        "name": "",
+        "group": "f0a7b77d.7a6308",
+        "order": 6,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Pressure",
+        "label": "hPa",
+        "format": "{{value}}",
+        "min": "800",
+        "max": "1200",
+        "colors": [
+            "#00c4ff",
+            "#00e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 640,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "ed597ccd.e1b8c8",
+        "type": "debug",
+        "z": "e14295b9.942268",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "f3339972.105ff",
+        "type": "ui_chart",
+        "z": "e14295b9.942268",
+        "name": "",
+        "group": "f0a7b77d.7a6308",
+        "order": 7,
+        "width": "0",
+        "height": "0",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "800",
+        "ymax": "1200",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 630,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1edcc52.da6ab",
+        "type": "smooth",
+        "z": "e14295b9.942268",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "6",
+        "round": "2",
+        "mult": "single",
+        "reduce": false,
+        "x": 460,
+        "y": 680,
+        "wires": [
+            [
+                "37c5dd5c.0bc9c2",
+                "f3339972.105ff",
+                "ed597ccd.e1b8c8"
+            ]
+        ]
+    },
+    {
+        "id": "3682c452.fc1ac4",
+        "type": "ui_gauge",
+        "z": "e14295b9.942268",
+        "name": "",
+        "group": "f0a7b77d.7a6308",
+        "order": 8,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Light",
+        "label": "",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "10000",
+        "colors": [
+            "#000080",
+            "#c0c0c0",
+            "#ffff80"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 630,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "6b687844.4dfea8",
+        "type": "function",
+        "z": "e14295b9.942268",
+        "name": "state to finished html icon",
+        "func": "var moon = \"wi wi-darksky-clear-night\";\nvar rain = \"wi wi-darksky-rain\";\nvar sun = \"wi wi-darksky-clear-day\";\nvar cloud = \"wi wi-darksky-partly-cloudy-day\";\n\ncontext.rain = context.rain || 5;\ncontext.light = context.light || 0.5;\ncontext.pressure = context.pressure || 1000;\n\nif(msg.topic === 'Rain' && msg.payload != 'nan')\n    context.rain = msg.payload;\nif(msg.topic === 'Luminosity' && msg.payload != 'nan')\n    context.light = msg.payload;\nif(msg.topic === 'Pressure' && msg.payload != 'nan')\n    context.pressure = msg.payload;\n\nif(context.rain < 10)\n{\n    if(context.light > 400)\n        msg.payload = sun;\n    else if (context.light > 2 && context.light < 400)\n        msg.payload = cloud;\n    else\n        msg.payload = moon;\n}\nelse\n    msg.payload = rain;\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 570,
+        "y": 1020,
+        "wires": [
+            [
+                "2113b4bc.b6619c"
+            ]
+        ]
+    },
+    {
+        "id": "2113b4bc.b6619c",
+        "type": "ui_template",
+        "z": "e14295b9.942268",
+        "group": "f0a7b77d.7a6308",
+        "name": "Weather symbol",
+        "order": 9,
+        "width": "7",
+        "height": "6",
+        "format": "<div class=\"{{msg.payload}}\" style=\"color:#FF7D00; font-size: 120pt; text-align: center; margin: auto\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 800,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ce4ab592.6d5848",
+        "type": "ui_gauge",
+        "z": "e14295b9.942268",
+        "name": "",
+        "group": "f0a7b77d.7a6308",
+        "order": 10,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "UV",
+        "label": "",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "11",
+        "colors": [
+            "#000080",
+            "#c0c0c0",
+            "#ffff80"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 630,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "d03c058b.77cf",
+        "type": "ui_chart",
+        "z": "e14295b9.942268",
+        "name": "",
+        "group": "f0a7b77d.7a6308",
+        "order": 11,
+        "width": "0",
+        "height": "0",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 630,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d702100b.185ea",
+        "type": "smooth",
+        "z": "e14295b9.942268",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "6",
+        "round": "2",
+        "mult": "single",
+        "reduce": false,
+        "x": 460,
+        "y": 1140,
+        "wires": [
+            [
+                "ce4ab592.6d5848",
+                "d03c058b.77cf"
+            ]
+        ]
+    },
+    {
+        "id": "cea1f014.9d3e78",
+        "type": "ui_gauge",
+        "z": "e14295b9.942268",
+        "name": "",
+        "group": "f0a7b77d.7a6308",
+        "order": 12,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Soil temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-30",
+        "max": "60",
+        "colors": [
+            "#00c4ff",
+            "#00e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 660,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "d58d4e3.269463",
+        "type": "debug",
+        "z": "e14295b9.942268",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "592bc12a.1c8e78",
+        "type": "ui_chart",
+        "z": "e14295b9.942268",
+        "name": "",
+        "group": "f0a7b77d.7a6308",
+        "order": 13,
+        "width": "0",
+        "height": "0",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 630,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7eddd0e4.83a23",
+        "type": "smooth",
+        "z": "e14295b9.942268",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "6",
+        "round": "2",
+        "mult": "single",
+        "reduce": false,
+        "x": 460,
+        "y": 1340,
+        "wires": [
+            [
+                "cea1f014.9d3e78",
+                "592bc12a.1c8e78",
+                "d58d4e3.269463"
+            ]
+        ]
+    },
+    {
+        "id": "bb9b4c27.280998",
+        "type": "ui_gauge",
+        "z": "e14295b9.942268",
+        "name": "",
+        "group": "f0a7b77d.7a6308",
+        "order": 14,
+        "width": "7",
+        "height": "6",
+        "gtype": "wave",
+        "title": "Soil moisture",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00c4ff",
+            "#00e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 650,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "b8bc6c67.dadde",
+        "type": "debug",
+        "z": "e14295b9.942268",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 1780,
+        "wires": []
+    },
+    {
+        "id": "1995ae3a.7a09da",
+        "type": "ui_chart",
+        "z": "e14295b9.942268",
+        "name": "",
+        "group": "f0a7b77d.7a6308",
+        "order": 15,
+        "width": "0",
+        "height": "0",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 630,
+        "y": 1680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "583d192d.4e7af",
+        "type": "smooth",
+        "z": "e14295b9.942268",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "6",
+        "round": "2",
+        "mult": "single",
+        "reduce": false,
+        "x": 460,
+        "y": 1640,
+        "wires": [
+            [
+                "bb9b4c27.280998",
+                "1995ae3a.7a09da",
+                "b8bc6c67.dadde"
+            ]
+        ]
+    },
+    {
+        "id": "1d35c67f.86464a",
+        "type": "ui_gauge",
+        "z": "e14295b9.942268",
+        "name": "",
+        "group": "f0a7b77d.7a6308",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Air temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-30",
+        "max": "60",
+        "colors": [
+            "#00c4ff",
+            "#00e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 640,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "6ccb3961.df1368",
+        "type": "debug",
+        "z": "e14295b9.942268",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "117973f8.6b7ab4",
+        "type": "ui_chart",
+        "z": "e14295b9.942268",
+        "name": "",
+        "group": "f0a7b77d.7a6308",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 610,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4a1aee9.7066e8",
+        "type": "smooth",
+        "z": "e14295b9.942268",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "6",
+        "round": "2",
+        "mult": "single",
+        "reduce": false,
+        "x": 440,
+        "y": 120,
+        "wires": [
+            [
+                "1d35c67f.86464a",
+                "117973f8.6b7ab4",
+                "6ccb3961.df1368"
+            ]
+        ]
+    },
+    {
+        "id": "c20e9d05.01a88",
+        "type": "function",
+        "z": "e14295b9.942268",
+        "name": "Get data",
+        "func": "let msg2 = {};\nlet msg3 = {};\nlet msg4 = {};\nlet msg5 = {};\nlet msg6 = {};\nlet msg7 = {};\n\nvar airTemp = msg.payload.toString().match(\"#TC:(.*)#P\");\nvar rainIndex = msg.payload.toString().match(\"#R:(.*)#TSC\");\nvar atmPress = msg.payload.toString().match(\"#P:(.*)#L\");\nvar luxIndex = msg.payload.toString().match(\"#L:(.*)#UV\");\nvar UVIndex = msg.payload.toString().match(\"#UV:(.*)#R\");\nvar soilTemp = msg.payload.toString().match(\"#TSC:(.*)#M\");\nvar soilMoist = msg.payload.toString().match(\"#M:(.*)#BAT\")\n\nmsg.topic = \"Temperature\";\nmsg.payload = airTemp[1];\n\nnode.send([msg, null, null, null, null, null, null]);\n\nmsg2.topic = \"Rain\";\nmsg2.payload = rainIndex[1];\n\nnode.send([null, msg2, null, null, null, null, null]);\n\nmsg3.topic = \"Pressure\";\nmsg3.payload = atmPress[1];\n\nnode.send([null, null, msg3, null, null, null, null]);\n\nmsg4.topic = \"Luminosity\"\nmsg4.payload = luxIndex[1]\n\nnode.send([null, null, null, msg4, null, null, null]);\n\nmsg5.topic = \"UV index\"\nmsg5.payload = UVIndex[1]\n\nnode.send([null, null, null, null, msg5, null, null]);\n\nmsg6.topic = \"Temperature\"\nmsg6.payload = soilTemp[1]\n\nnode.send([null, null, null, null, null, msg6, null]);\n\nmsg7.topic = \"Moisture\"\nmsg7.payload = soilMoist[1]\n\nnode.send([null, null, null, null, null, null, msg7]);\n",
+        "outputs": 7,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 200,
+        "y": 740,
+        "wires": [
+            [
+                "d4a1aee9.7066e8"
+            ],
+            [
+                "448827f1.5032e",
+                "6b687844.4dfea8"
+            ],
+            [
+                "a1edcc52.da6ab",
+                "6b687844.4dfea8"
+            ],
+            [
+                "3682c452.fc1ac4",
+                "6b687844.4dfea8"
+            ],
+            [
+                "d702100b.185ea"
+            ],
+            [
+                "7eddd0e4.83a23"
+            ],
+            [
+                "583d192d.4e7af"
+            ]
+        ]
+    },
+    {
+        "id": "aaf690a.bf5107",
+        "type": "subflow:e14295b9.942268",
+        "z": "edd64c81.e7c368",
+        "name": "Agro 2",
+        "env": [],
+        "x": 1010,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "e66b4059.84775",
+        "type": "ui_template",
+        "z": "edd64c81.e7c368",
+        "d": true,
+        "group": "2d846235.44966e",
+        "name": "",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "format": "<script>\n(function($scope) {\n$scope.oldGroupName = 'Agro 1' // initial group placeholder name\n\n$scope.$watch('msg', function() {\n    if ($scope.msg){\n        $(\"p.nr-dashboard-cardtitle\").each(function(){\n            if($(this).text().trim() == $scope.oldGroupName.trim()){\n                p = $(this);\n                p.html(p.html().replace($scope.oldGroupName, $scope.msg.payload));\n                 $scope.oldGroupName = $scope.msg.payload\n            }\n        })\n    }\n });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 980,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e2977bc4.781da8",
+        "type": "ui_text_input",
+        "z": "edd64c81.e7c368",
+        "d": true,
+        "name": "",
+        "label": "Change name",
+        "tooltip": "",
+        "group": "2d846235.44966e",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "topicType": "str",
+        "x": 600,
+        "y": 60,
+        "wires": [
+            [
+                "e66b4059.84775"
+            ]
+        ]
+    },
+    {
+        "id": "5e26b158.e425d",
+        "type": "link in",
+        "z": "a7863da5.b3ad4",
+        "name": "Dominus",
+        "links": [
+            "71a69112.0332b8",
+            "24f51bc0.622ea4",
+            "130f0cf3.bf00db",
+            "2f448d36.34593a",
+            "9f945a29.946f28",
+            "687989d0.00a378",
+            "4cf55007.b87268",
+            "2da97dea.76442a",
+            "4cc2d83b.6d4088",
+            "d77c5bb8.7dd43",
+            "c5c71d7a.91c758",
+            "4e95cc43.081fcc",
+            "e73f95c1.8b8e78"
+        ],
+        "x": 1595,
+        "y": 1840,
+        "wires": [
+            [
+                "eef5d0fc.2b93d8"
+            ]
+        ]
+    },
+    {
+        "id": "71a69112.0332b8",
+        "type": "link out",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "links": [
+            "5e26b158.e425d"
+        ],
+        "x": 615,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "24f51bc0.622ea4",
+        "type": "link out",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "links": [
+            "5e26b158.e425d"
+        ],
+        "x": 1055,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "130f0cf3.bf00db",
+        "type": "link out",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "links": [
+            "5e26b158.e425d"
+        ],
+        "x": 335,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "2f448d36.34593a",
+        "type": "link out",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "links": [
+            "5e26b158.e425d"
+        ],
+        "x": 795,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "9f945a29.946f28",
+        "type": "link out",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "links": [
+            "5e26b158.e425d"
+        ],
+        "x": 1255,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "687989d0.00a378",
+        "type": "link out",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "links": [
+            "5e26b158.e425d"
+        ],
+        "x": 1355,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "4cf55007.b87268",
+        "type": "link out",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "links": [
+            "5e26b158.e425d"
+        ],
+        "x": 355,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "2da97dea.76442a",
+        "type": "link out",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "links": [
+            "5e26b158.e425d"
+        ],
+        "x": 795,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "4cc2d83b.6d4088",
+        "type": "link out",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "links": [
+            "5e26b158.e425d"
+        ],
+        "x": 335,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "d77c5bb8.7dd43",
+        "type": "link out",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "links": [
+            "5e26b158.e425d"
+        ],
+        "x": 755,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "c5c71d7a.91c758",
+        "type": "link out",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "links": [
+            "5e26b158.e425d"
+        ],
+        "x": 1215,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "4e95cc43.081fcc",
+        "type": "link out",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "links": [
+            "5e26b158.e425d"
+        ],
+        "x": 375,
+        "y": 2240,
+        "wires": []
+    },
+    {
+        "id": "e73f95c1.8b8e78",
+        "type": "link out",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "links": [
+            "5e26b158.e425d"
+        ],
+        "x": 1315,
+        "y": 2240,
+        "wires": []
+    },
+    {
+        "id": "92e5b81a.832308",
+        "type": "function",
+        "z": "a7863da5.b3ad4",
+        "name": "Dashboard activation",
+        "func": "msg.payload = {\"group\": {\"show\": [\"Home_Agro_\" + global.get(\"Agricolae\").length]}};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1740,
+        "y": 2140,
+        "wires": [
+            [
+                "268c20ab.692768"
+            ]
+        ]
+    },
+    {
+        "id": "268c20ab.692768",
+        "type": "ui_ui_control",
+        "z": "a7863da5.b3ad4",
+        "name": "",
+        "events": "all",
+        "x": 1780,
+        "y": 2060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ea474169.454548",
+        "type": "function",
+        "z": "edd64c81.e7c368",
+        "name": "",
+        "func": "var rx = global.get(\"lastPacket.remote64\");\nvar dic = global.get(\"Agricolae\");\n\nswitch (dic.indexOf(rx)) {\n  case 0:\n    node.send([msg, null, null, null, null, null, null, null, null, null]);\n    break;\n  case 1:\n    node.send([null, msg, null, null, null, null, null, null, null, null]);\n    break;\n  case 2:\n    node.send([null, null, msg, null, null, null, null, null, null, null]);\n    break;\n  case 3:\n    node.send([null, null, null, msg, null, null, null, null, null, null]);\n    break;\n  case 4:\n    node.send([null, null, null, null, msg, null, null, null, null, null]);\n    break;\n  case 5:\n    node.send([null, null, null, null, null, msg, null, null, null, null]);\n    break;\n  case 6:\n    node.send([null, null, null, null, null, null, msg, null, null, null]);\n    break;\n  case 7:\n    node.send([null, null, null, null, null, null, null, msg, null, null]);\n    break;\n  case 8:\n    node.send([null, null, null, null, null, null, null, null, msg, null]);\n    break;\n  case 9:\n    node.send([null, null, null, null, null, null, null, null, null, msg]);\n}\n",
+        "outputs": 10,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 780,
+        "y": 340,
+        "wires": [
+            [
+                "5f31a5a3.61c90c"
+            ],
+            [
+                "aaf690a.bf5107"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "df0072fd.f4fcb8",
+        "type": "ui_template",
+        "z": "a7863da5.b3ad4",
+        "group": "4754eb3d.0d2434",
+        "name": "Hint configuration",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"color: #FF7D00; font-size : 9pt; text-align: justify;\">In these field you can configurate the network settings to avoid interference or collisions with other communication systems. If you want to use the default settings simply press submit without fill the spaces. Once that the settings are submitted this tab will be no longer needed and can be collapsed. </div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 800,
+        "y": 2740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b4dc5346.4d273",
+        "type": "ui_template",
+        "z": "a7863da5.b3ad4",
+        "group": "19997b20.4960bd",
+        "name": "Hint pairing",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"color: #FF7D00; text-align: justify; font-size : 9pt\">After the submition of the network settings turn on the Agricola that you want to connect, wait for the green light and than press pair.</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 770,
+        "y": 2800,
+        "wires": [
+            []
+        ]
+    }
+]
