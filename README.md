@@ -4,7 +4,8 @@
 
 ### Overview
 
-In this reposutory is contained all the software necessary to configure a working systems. The hardware design is still under development, the working prototype of the network has been implemented only with breadboards and so only the schematic is actually available. 
+In this reposutory is contained all the software necessary to configure a working systems. The hardware design is still under development, the working prototype of the network has been implemented only with breadboards and so only the Agricola schematic is actually available. 
+
 ![Schematich](https://github.com/AlbertoZandara/Saturn-system/blob/main/Schematics/SCHEMATIC.png)
 
 ### C++ program
