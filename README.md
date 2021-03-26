@@ -1,6 +1,6 @@
 # Saturn system
 
-![Logo](https://github.com/AlbertoZandara/Saturn-system/blob/main/Miscellaneus/Saturn13.png | width = 250px)
+![Logo](https://github.com/AlbertoZandara/Saturn-system/blob/main/Miscellaneus/Saturn13.png)
 
 ###### The Saturn system is a technological solution designed for agricultural parameters monitoring. The system is conceived to be integrated in a smart agriculture system in order to achieve a reliable and simple crops data collection. It consists in a low power sensor network based on the 802.15.4 communication protocol. The system is composed by two types of device: the Dominus and the Agricola.
 
