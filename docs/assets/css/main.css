@@ -3336,7 +3336,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				height: 4.75em;
+				height: 4.5em;
 				line-height: 2.75em;
 			}
 
