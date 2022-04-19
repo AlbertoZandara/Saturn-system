@@ -3300,26 +3300,36 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1680px) {
-
-			#header nav a[href="#menu"] {
-				padding-right: 3.75em !important;
+			
+			#header {
+				height: 4em;
+				line-height: 2.75em;
 			}
 
-				#header nav a[href="#menu"]:last-child {
-					padding-right: 4.25em !important;
+				#header nav a[href="#menu"] {
+					padding-right: 3.75em !important;
 				}
+
+					#header nav a[href="#menu"]:last-child {
+						padding-right: 4.25em !important;
+					}
 
 		}
 
 		@media screen and (max-width: 1280px) {
-
-			#header nav a[href="#menu"] {
-				padding-right: 4em !important;
+			
+			#header {
+				height: 4.25em;
+				line-height: 2.75em;
 			}
 
-				#header nav a[href="#menu"]:last-child {
-					padding-right: 4.5em !important;
+				#header nav a[href="#menu"] {
+					padding-right: 4em !important;
 				}
+
+					#header nav a[href="#menu"]:last-child {
+						padding-right: 4.5em !important;
+					}
 
 		}
 
