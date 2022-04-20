@@ -167,11 +167,11 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #D48A35 !important;
+			color: #9bf1ff !important;
 		}
 
 		a:active {
-			color: #D48A35 !important;
+			color: #53e3fb !important;
 		}
 
 	strong, b {
@@ -2526,8 +2526,8 @@ input, select, textarea {
 		background-color: transparent;
 		border: 0;
 		border-radius: 0;
-		box-shadow: inset 0 0 0 2px #D48A35;
-		color: #D48A35;
+		box-shadow: inset 0 0 0 2px #ffffff;
+		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
@@ -2551,8 +2551,8 @@ input, select, textarea {
 		button:active,
 		.button:hover,
 		.button:active {
-			box-shadow: inset 0 0 0 2px #D48A35;
-			color: #D48A35;
+			box-shadow: inset 0 0 0 2px #9bf1ff;
+			color: #9bf1ff;
 		}
 
 		input[type="submit"]:active,
@@ -2562,7 +2562,7 @@ input, select, textarea {
 		.button:active {
 			background-color: rgba(155, 241, 255, 0.1);
 			box-shadow: inset 0 0 0 2px #53e3fb;
-			color: #53e3fb !important;
+			color: #53e3fb;
 		}
 
 		input[type="submit"].icon:before,
@@ -3208,7 +3208,7 @@ input, select, textarea {
 				}
 
 					#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
-						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %23D48A33%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
+						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
 						background-position: center;
 						background-repeat: no-repeat;
 						background-size: 24px 32px;
@@ -3300,43 +3300,33 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1680px) {
-			
-			#header {
-				height: 4em;
-				line-height: 2.75em;
+
+			#header nav a[href="#menu"] {
+				padding-right: 3.75em !important;
 			}
 
-				#header nav a[href="#menu"] {
-					padding-right: 3.75em !important;
+				#header nav a[href="#menu"]:last-child {
+					padding-right: 4.25em !important;
 				}
-
-					#header nav a[href="#menu"]:last-child {
-						padding-right: 4.25em !important;
-					}
 
 		}
 
 		@media screen and (max-width: 1280px) {
-			
-			#header {
-				height: 4.25em;
-				line-height: 2.75em;
+
+			#header nav a[href="#menu"] {
+				padding-right: 4em !important;
 			}
 
-				#header nav a[href="#menu"] {
-					padding-right: 4em !important;
+				#header nav a[href="#menu"]:last-child {
+					padding-right: 4.5em !important;
 				}
-
-					#header nav a[href="#menu"]:last-child {
-						padding-right: 4.5em !important;
-					}
 
 		}
 
 		@media screen and (max-width: 736px) {
 
 			#header {
-				height: 4.5em;
+				height: 4.75em;
 				line-height: 2.75em;
 			}
 
@@ -3469,7 +3459,6 @@ input, select, textarea {
 
 				#banner > .inner header > :first-child {
 					width: auto;
-					padding-top: 1em;
 				}
 
 					#banner > .inner header > :first-child:after {
@@ -3495,7 +3484,6 @@ input, select, textarea {
 
 				#banner > .inner .content > :last-child {
 					margin: 0 auto;
-					color: #D48A35;
 				}
 
 				#banner > .inner .content p {
@@ -3503,7 +3491,6 @@ input, select, textarea {
 					font-weight: 600;
 					letter-spacing: 0.25em;
 					text-transform: uppercase;
-					padding-bottom: 2em;
 				}
 
 		#banner.major {
@@ -3607,7 +3594,7 @@ input, select, textarea {
 				}
 
 				#banner.major {
-					padding: 4em 0 ;
+					padding: 8em 0 4em 0 ;
 				}
 
 		}
