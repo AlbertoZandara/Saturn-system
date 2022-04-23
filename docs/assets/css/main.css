@@ -233,11 +233,11 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	font-variant-numeric: lining-nums;
-	-moz-font-feature-settings:"lnum" 1; 
+	-moz-font-feature-settings:"lnum" 1, "ss01" /* alternate a */ , "ss08" /* alternate u */ , "ss09" /* alternate W/w */; 
 	-moz-font-feature-settings:"lnum=1"; 
-	-ms-font-feature-settings:"lnum" 1; 
-	-o-font-feature-settings:"lnum" 1; 
-	-webkit-font-feature-settings:"lnum" 1; 
+	-ms-font-feature-settings:"lnum" 1, "ss01" /* alternate a */ , "ss08" /* alternate u */ , "ss09" /* alternate W/w */; 
+	-o-font-feature-settings:"lnum" 1, "ss01" /* alternate a */ , "ss08" /* alternate u */ , "ss09" /* alternate W/w */; 
+	-webkit-font-feature-settings:"lnum" 1, "ss01" /* alternate a */ , "ss08" /* alternate u */ , "ss09" /* alternate W/w */; 
 	font-feature-settings:"lnum" 1, "ss01" /* alternate a */ , "ss08" /* alternate u */ , "ss09" /* alternate W/w */;
 	}
 
