@@ -1,5 +1,5 @@
 
-<img align="left" width="180" height="180" src="https://github.com/AlbertoZandara/Saturn-system/blob/main/Miscellaneus/Saturn13.png" alt="Resume application project app icon">
+<img align="left"  height="180" src="https://github.com/AlbertoZandara/Saturn-system/blob/main/Miscellaneus/Saturn.svg" alt="Resume application project app icon">
 
 # Saturn system
 
