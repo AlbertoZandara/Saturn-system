@@ -3021,7 +3021,7 @@ footer .inner {
 			}
 
 			.tiles article:hover:before {
-				opacity: 0.15;
+				opacity: 0.146;
 			}
 			
 			.tiles article:hover header.tile1 > :first-child:after {
@@ -3061,9 +3061,17 @@ footer .inner {
 			.tiles article:nth-child(6n - 4):before {
 				background-color: #2b2e2e;
 			}
+			
+			.tiles article:nth-child(6n - 4):hover:before {
+				opacity: 0.01;
+			}
 
 			.tiles article:nth-child(6n - 3):before {
 				background-color: #2b2e2e;
+			}
+			
+			.tiles article:nth-child(6n - 3):hover:before {
+				opacity: 0.01;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
