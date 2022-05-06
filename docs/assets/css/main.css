@@ -3131,10 +3131,6 @@ footer .inner {
 				flex-direction: column-reverse;
 			}
 				
-				.tiles article:before{
-					background-color: rgba(0,0,0,0) !important;
-				}
-				
 				.tiles article {
 					height: 20em;
 					width: 100% !important;
