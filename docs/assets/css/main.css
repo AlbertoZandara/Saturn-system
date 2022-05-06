@@ -2934,6 +2934,10 @@ footer .inner {
 		flex-wrap: wrap;
 		border-top: 0 !important;
 	}
+	
+	.tiles1{
+		flex-direction: row-reverse;
+	}
 
 		.tiles + * {
 			border-top: 0 !important;
@@ -3123,7 +3127,8 @@ footer .inner {
 		@media screen and (max-width: 480px) {
 
 			.tiles {
-				display: block;
+				display: flex;
+				flex-direction: column-reverse;
 			}
 
 				.tiles article {
