@@ -3006,14 +3006,14 @@ footer .inner {
 				display: block;
 				height: 100%;
 				left: 0;
-				opacity: 0.85;
+				opacity: 1;
 				position: absolute;
 				width: 100%;
 				z-index: 2;
 			}
 
 			.tiles article:after {
-				background-color: rgba(43, 46, 46, 0.15);
+				background-color: rgba(43, 46, 46, 0);
 				content: '';
 				display: block;
 				height: 100%;
@@ -3025,7 +3025,8 @@ footer .inner {
 			}
 
 			.tiles article:hover:before {
-				opacity: 0.146;
+				/* opacity: 0.146; */
+				opacity: 0;
 			}
 			
 			.tiles article:hover header.tile1 > :first-child:after {
@@ -3089,7 +3090,33 @@ footer .inner {
 			.tiles article:nth-child(6n):before {
 				background-color: #87c5a4;
 			}
+		
+		@media screen and (max-width: 1190px) {
+			.tiles article:nth-child(6n - 5):before {
+				opacity: 0;
+			}
 
+			.tiles article:nth-child(6n - 4):before {
+				opacity: 0;;
+			}
+			
+			.tiles article:nth-child(6n - 4):hover:before {
+				opacity: 0;
+			}
+
+			.tiles article:nth-child(6n - 3):before {
+				opacity: 0;
+			}
+			
+			.tiles article:nth-child(6n - 3):hover:before {
+				opacity: 0;
+			}
+
+			.tiles article:nth-child(6n - 2):before {
+				opacity: 0;
+			}
+		}
+		
 		@media screen and (max-width: 1280px) {
 
 			.tiles article {
