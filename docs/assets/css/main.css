@@ -3115,6 +3115,14 @@ footer .inner {
 			.tiles article:nth-child(6n - 2):before {
 				opacity: 0;
 			}
+
+			header.major > :first-child:after {
+				background-color: #2b2e2e;
+			}
+						
+			header.tile1 > :first-child:after {
+				background-color: #D48A35;
+			}
 		}
 		
 		@media screen and (max-width: 1280px) {
