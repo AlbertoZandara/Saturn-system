@@ -3123,6 +3123,10 @@ footer .inner {
 			header.tile1 > :first-child:after {
 				background-color: #D48A35;
 			}
+			
+			header.title > :first-child:after {
+				background-color: #D48A35;
+			}
 		}
 		
 		@media screen and (max-width: 1280px) {
