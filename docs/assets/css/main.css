@@ -1976,17 +1976,20 @@ footer .inner {
 				content: '';
 				background-color: #D48A35;
 				display: block;
-				height: 1px;
+				height: 1.1px;
 				margin: 0.325em 0 0.25em 0;
 				width: 100%;
 			}
 			
 			header.tile1 > :first-child:after {
 				background-color: #2b2e2e;
+				height: 1px;
 			}
 			
 			header.tile2 > :first-child:after {
 				background-color: #D48A35;
+				height: 1.1px;
+
 			}
 
 		header.major > p {
@@ -2830,7 +2833,6 @@ footer .inner {
 				position: absolute;
 				right: 1.5em;
 				top: 0;
-				vertical-align: middle;
 				width: 36px;
 			}
 
@@ -3479,7 +3481,6 @@ footer .inner {
 				line-height: inherit;
 				padding: 0 0.75em;
 				position: relative;
-				vertical-align: middle;
 			}
 
 				#header nav a:last-child {
@@ -3501,7 +3502,6 @@ footer .inner {
 						position: absolute;
 						right: 1.5em;
 						top: 0;
-						vertical-align: middle;
 						width: 24px;
 					}
 
@@ -3707,7 +3707,7 @@ footer .inner {
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size:contain;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3826,6 +3826,7 @@ footer .inner {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
+			text-align: center;
 		}
 
 			#banner.major.alt {
@@ -4177,7 +4178,7 @@ footer .inner {
 		-ms-justify-content: center;
 		justify-content: center;
 		pointer-events: none;
-		background: #2B2E2E
+		background: #2B2E2E;
 		box-shadow: none;
 		height: 100%;
 		left: 0;
@@ -4270,7 +4271,6 @@ footer .inner {
 			text-align: right;
 			text-indent: 8em;
 			top: 0;
-			vertical-align: middle;
 			white-space: nowrap;
 			width: 8em;
 		}
