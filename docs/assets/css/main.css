@@ -3943,6 +3943,7 @@ footer .inner {
 
 			#banner {
 				padding: 6em 0 2em 0 ;
+				background-attachment: scroll;
 			}
 
 				#banner > .inner .content p br {
