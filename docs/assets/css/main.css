@@ -261,6 +261,54 @@ footer .inner {
 	padding: 3em 0 2em 0;
 }
 
+.swiper {
+	width: 100%;
+	height: 100%;
+  }
+
+  @media screen and (max-width: 640px) {
+	.hide-for-small-only {
+		display: none !important;
+	}
+  }
+
+  .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+  }
+
+  .swiper-slide img {
+	display: block;
+	width: 80%;
+	height: 80%;
+	object-fit: cover;
+  }
+
+  @media screen and (max-aspect-ratio: 1/1) {
+	.swiper-slide img {
+		display: block;
+		margin-top: 15%;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	  }
+  }
+  
+
 /* Basic */
 
 	@-ms-viewport {
@@ -1979,6 +2027,10 @@ footer .inner {
 				height: 1.1px;
 				margin: 0.325em 0 0.25em 0;
 				width: 100%;
+			}
+
+			header.major > :first-child:after {
+				background-color: #D48A35 !important;
 			}
 			
 			header.tile1 > :first-child:after {
@@ -3720,6 +3772,11 @@ footer .inner {
 		position: relative;
 	}
 
+		#banner.landing {
+			background-color: #2B2E2E;
+			background-image: none;
+		}
+
 		#banner:after {
 			-moz-transition: opacity 2.5s ease;
 			-webkit-transition: opacity 2.5s ease;
@@ -3829,6 +3886,15 @@ footer .inner {
 			text-align: center;
 		}
 
+		#banner.landing {
+			height: fit-content !important;
+			min-height: 1vh;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			text-align: center;
+		}
+
 			#banner.major.alt {
 				opacity: 0.75;
 			}
@@ -3906,7 +3972,7 @@ footer .inner {
 					}
 
 				#banner.major {
-					min-height: 100vh	;
+					/* min-height: 100vh; */ 
 					max-height: none;
 					text-align: center;
 				}
@@ -4129,7 +4195,8 @@ footer .inner {
 		}
 
 		#wrapper > * > .inner {
-			max-width: 65em;
+			max-width: 90%;
+			max-height: 90%;
 		}
 		
 		#wrapper > * > .render {
