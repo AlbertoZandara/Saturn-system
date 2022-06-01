@@ -301,13 +301,47 @@ footer .inner {
   @media screen and (max-aspect-ratio: 1/1) {
 	.swiper-slide img {
 		display: block;
-		margin-top: 15%;
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
 	  }
   }
-  
+
+  @media screen and (max-aspect-ratio: 9/16) {
+	.swiper-slide img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	  }
+  }
+
+
+img.configure {
+	content: url("../../images/Configure.svg");
+}
+
+img.connect {
+	content: url("../../images/Connect.svg");
+}
+
+img.analyze {
+	content: url("../../images/Analyze.svg");
+}
+
+	@media screen and (max-aspect-ratio: 9/14) {
+		img.configure {
+			content: url("../../images/ConfigureM.svg");
+		}
+		
+		img.connect {
+			content: url("../../images/ConnectM.svg");
+		}
+		
+		img.analyze {
+			content: url("../../images/AnalyzeM.svg");
+		}
+	}
 
 /* Basic */
 
@@ -2030,6 +2064,10 @@ footer .inner {
 			}
 
 			header.major > :first-child:after {
+				background-color: #D48A35;
+			}
+
+			header.subt > :first-child:after {
 				background-color: #D48A35 !important;
 			}
 			
@@ -3895,6 +3933,17 @@ footer .inner {
 			text-align: center;
 		}
 
+			@media screen and (max-aspect-ratio: 9/16) {
+				#banner.landing {
+					height: 100vh !important;
+					min-height: 1vh;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					text-align: center;
+				}
+			}	
+			
 			#banner.major.alt {
 				opacity: 0.75;
 			}
