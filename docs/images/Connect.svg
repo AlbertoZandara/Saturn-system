@@ -6,11 +6,11 @@
 	.st0{fill:#2C2E2F;}
 	.st1{display:none;}
 	.st2{display:inline;fill:none;stroke:#3FA9F5;stroke-miterlimit:10;}
-	.st3{fill:#C98340;}
+	.st3{fill:#D48A35;}
 	.st4{fill:none;stroke:#C98340;stroke-width:3;stroke-miterlimit:10;}
-	.st5{fill:none;stroke:#C98340;stroke-miterlimit:10;}
-	.st6{fill:#C98340;stroke:#C98340;stroke-miterlimit:10;}
-	.st7{fill:#FFFFFF;stroke:#C98340;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#D48A35;stroke-miterlimit:10;}
+	.st6{fill:#D48A35;stroke:#D48A35;stroke-miterlimit:10;}
+	.st7{fill:#FFFFFF;stroke:#D48A35;stroke-miterlimit:10;}
 	.st8{fill:#2B2E2E;stroke:#FFFFFF;stroke-miterlimit:10;}
 	.st9{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
 	.st10{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
