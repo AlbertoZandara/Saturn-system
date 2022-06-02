@@ -3944,7 +3944,7 @@ img.analyze {
 			@media screen and (max-aspect-ratio: 9/16) {
 				#banner.landing {
 					height: fit-content;
-					min-height: 110vh;
+					min-height: 100vh;
 					display: flex;
 					flex-wrap: wrap;
 					justify-content: center;
