@@ -256,6 +256,11 @@ input, select, textarea {
 	appearance: none;
 }
 
+.highlight {
+	color: #D48A35;
+	letter-spacing: 0.1em;
+}
+
 footer .inner {
 	margin: 0 auto;
 	padding: 3em 0 2em 0;
@@ -477,6 +482,7 @@ img.analyze {
 
 	h2.logo-font {
 		font-weight: 200;
+		letter-spacing: 0.45em;
 		color: #D48A35;
 	}
 
@@ -603,6 +609,10 @@ img.analyze {
 
 		.row.aln-center {
 			justify-content: center;
+		}
+
+		.row.it-center {
+			align-items: center;
 		}
 
 		.row.aln-right {
@@ -2541,6 +2551,10 @@ img.analyze {
 					width: 100%;
 				}
 
+				.adapt-txt{
+					width: 100% !important;
+				}
+
 			}
 
 /* List */
@@ -4145,13 +4159,20 @@ img.analyze {
 				width: calc(100% - 6em);
 			}
 			
-			#main > * > .hw {
+			#main > * > .infrastr {
 				display: flex;
-				padding: 5em 0 2em 0 ;
+				padding: 5em 0 5em 0 ;
 				margin: 0 auto;
 				max-width: 65em;
 				width: calc(100% - 6em);
 				justify-content: center;
+				text-align:justify;
+				flex-direction: column;
+				align-items: center;
+			}	
+
+			.adapt-txt{
+				width: 75%;
 			}	
 
 		#main.alt {
@@ -4252,7 +4273,7 @@ img.analyze {
 				}
 
 				#contact > .cont > :nth-child(n) {
-					padding: 4em 0 2em 0 ;
+					padding: 4em 2em 2em 2em ;
 					border-right: 0;
 					width: 100%;
 				}
