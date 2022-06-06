@@ -462,7 +462,7 @@ img.analyze {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
-		font-weight: 600;
+		font-weight: 200;
 		line-height: 1;
 		margin: 0 0 1em 0;
 	}
@@ -484,6 +484,11 @@ img.analyze {
 		font-weight: 200;
 		letter-spacing: 0.45em;
 		color: #D48A35;
+	}
+
+	h2.prod {
+		font-weight: 200;
+		font-size: 3.5em;
 	}
 
 	h3 {
@@ -584,6 +589,18 @@ img.analyze {
 
 	.align-right {
 		text-align: right;
+	}
+
+	.flex-bot {
+		display: flex;
+		margin-top: auto !important;
+		justify-content: center;
+	}
+
+	.marg-auto {
+		display: flex;
+		margin: auto 0 auto 0!important;
+		flex-direction: column;
 	}
 
 /* Row */
@@ -1337,7 +1354,7 @@ img.analyze {
 
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 1024px) {
 
 			.row {
 				display: flex;
@@ -1345,6 +1362,10 @@ img.analyze {
 				box-sizing: border-box;
 				align-items: stretch;
 			}
+
+				.row-nopad {
+					padding: 0 !important;
+				}
 
 				.row > * {
 					box-sizing: border-box;
@@ -2083,7 +2104,7 @@ img.analyze {
 		width: -webkit-max-content;
 		width: -ms-max-content;
 		width: max-content;
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 		margin-top: 3em;
 	}
 
@@ -2857,7 +2878,7 @@ img.analyze {
 		background-color: transparent;
 		border: 0;
 		border-radius: 0;
-		box-shadow: inset 0 0 0 2px #D48A35;
+		box-shadow: inset 0 0 0 1px #D48A35;
 		color: #D48A35;
 		cursor: pointer;
 		display: inline-block;
@@ -2909,7 +2930,7 @@ img.analyze {
 		input[type="button"].fit,
 		button.fit,
 		.button.fit {
-			font-weight: 600;
+			font-weight: 300;
 			width: 100%;
 			margin: 0 0 1em 0;
 		}
@@ -3525,6 +3546,11 @@ img.analyze {
 		}
 	}
 
+	.fit-inner {
+		min-height: calc(100vh - 3.25em);
+		flex-wrap: nowrap;
+	}
+
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -3721,6 +3747,10 @@ img.analyze {
 
 		@media screen and (max-width: 1680px) {
 			
+			.fit-inner {
+				min-height: calc(100vh - 4em);
+			}
+
 			#header {
 				height: 4em;
 				line-height: 2.75em;
@@ -3744,6 +3774,10 @@ img.analyze {
 
 		@media screen and (max-width: 1280px) {
 			
+			.fit-inner {
+				min-height: calc(100vh - 4.25em);
+			}
+
 			#header {
 				height: 4.25em;
 				line-height: 2.75em;
@@ -3766,6 +3800,10 @@ img.analyze {
 		}
 
 		@media screen and (max-width: 736px) {
+
+			.fit-inner {
+				min-height: calc(100vh - 4.5em);
+			}
 
 			#header {
 				height: 4.5em;
@@ -3959,7 +3997,15 @@ img.analyze {
 				
 				#banner > .inner .subtitle p {
 					font-size: 2em;
-					font-weight: 300;
+					font-weight: 200;
+					letter-spacing: 0.25em;
+					color: #D48A35;
+					padding-bottom: 0;
+				}
+
+				#banner > .inner .sub-landing p {
+					font-size: 1.5em;
+					font-weight: 200;
 					letter-spacing: 0.25em;
 					color: #D48A35;
 					padding-bottom: 0;
@@ -4101,7 +4147,12 @@ img.analyze {
 				#banner.major {
 					height: 100vh;
 					padding: 4em 0 ;
-					height: fit-content;}
+					height: fit-content;
+				}
+				
+				#banner.prod-ban {
+					padding: 4em 0 0 0 ;
+				}
 
 		}
 		
@@ -4142,7 +4193,7 @@ img.analyze {
 				max-width: 65em;
 				width: calc(100% - 6em);
 			}
-
+				
 				@media screen and (max-width: 736px) {
 
 					#main > * > .inner {
@@ -4286,6 +4337,12 @@ img.analyze {
 				padding: 3em 0 1em 0 ;
 			}
 
+			#contact > .cont > :nth-child(n) {
+				padding: 3em 1em 1em 1em ;
+				border-right: 0;
+				width: 100%;
+			}
+
 		}
 
 
@@ -4342,10 +4399,9 @@ img.analyze {
 			max-width: 90%;
 			max-height: 100%;
 		}
-		
-		#wrapper > * > .render {
-			display: flex;
-			justify-content: center;
+
+		#wrapper > * > * > * > .render {
+			width: 80%;
 		}
 		
 		#wrapper > * > .render img {
