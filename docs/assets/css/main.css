@@ -4245,6 +4245,7 @@ img.analyze {
 			display: flex;
 			padding: 0 !important;
 			margin: 0 auto;
+			align-items: center;
 		}
 
 			#contact > .inner > :nth-child(2n - 1) {
