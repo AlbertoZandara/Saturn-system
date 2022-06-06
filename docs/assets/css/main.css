@@ -4261,7 +4261,7 @@ img.analyze {
 
 			#contact > .cont > :nth-child(n) {
 				padding: 4em 3em 2em 3em ;
-				border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+				border-bottom: 0;
 				border-right: solid 1px rgba(212, 212, 255, 0.1);
 				width: 100%;
 			}
@@ -4327,6 +4327,7 @@ img.analyze {
 				#contact > .cont > :nth-child(n) {
 					padding: 4em 2em 2em 2em ;
 					border-right: 0;
+					border-bottom: solid 1px rgba(212, 212, 255, 0.1);
 					width: 100%;
 				}
 
