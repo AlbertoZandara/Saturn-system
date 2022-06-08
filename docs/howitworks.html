@@ -31,7 +31,7 @@
 					<nav id="menu">
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">How it works</a></li>
+							<li><a href="howitworks.html">How it works</a></li>
 							<li><a href="products.html">Products</a></li>
 							<li><a href="elements.html">App</a></li>
 							<li><a href="elements.html">About</a></li>
@@ -69,19 +69,22 @@
 					<script src="assets/js/swiper-bundle.min.js.download"></script>
 
 					<!-- Initialize Swiper -->
-					<script>
-					var swiper = new Swiper(".mySwiper", {
-						cssMode: true,
-						navigation: {
-						nextEl: ".swiper-button-next",
-						prevEl: ".swiper-button-prev",
-						},
+					<script type="module">
+						import Swiper from 'assets/js/swiper-bundle.min.js.download';
+						import 'assets/css/swiper-bundle.min.css';
+						var swiper = new Swiper('.swiper', {
+						slidesPerView: 1,
+						spaceBetween: 30,
+						loop: true,
 						pagination: {
-						el: ".swiper-pagination",
+							el: '.swiper-pagination',
+							clickable: true,
 						},
-						mousewheel: true,
-						keyboard: true,
-					});
+						navigation: {
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev',
+						},
+						});
 					</script>
 
 				<!-- Main -->
