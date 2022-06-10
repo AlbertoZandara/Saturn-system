@@ -342,6 +342,34 @@ img.infrastructure {
 	content: url("../../images/Infrastructure.svg");
 }
 
+img.coord {
+	content: url("../../images/Coord.svg");
+}
+
+img.stake-front {
+	content: url("../../images/Stake-front.jpg");
+	width: 85% !important;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+img.stake-back {
+	content: url("../../images/Stake-back.jpg");
+	width: 85% !important;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+img.stake-full {
+	content: url("../../images/Stake-full.jpg");
+	width: 85% !important;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
 	@media screen and (max-aspect-ratio: 9/14) {
 		
 		img.configure {
@@ -358,6 +386,18 @@ img.infrastructure {
 
 		img.infrastructure {
 			content: url("../../images/InfrastructureM.svg");
+		}
+
+		img.stake-front {
+			width: 100% !important;
+		}
+
+		img.stake-back {
+			width: 100% !important;
+		}
+
+		img.stake-full {
+			width: 100% !important;
 		}
 	}
 
@@ -733,6 +773,7 @@ img.infrastructure {
 
 		.row > .col-8 {
 			width: 66.66667%;
+			text-align: center;
 		}
 
 		.row > .off-8 {
