@@ -650,6 +650,12 @@ img.stake-full {
 		display: flex;
 		margin: auto 0 auto 0!important;
 		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.notop-pad {
+		padding-top: 0 !important;
+		margin-top: 0 !important;
 	}
 
 /* Row */
@@ -1545,6 +1551,19 @@ img.stake-full {
 					width: 100%;
 				}
 
+				.row > .render-pad {
+					padding-top: 1em;
+					padding-bottom: 4em;
+				}
+
+				.render-medium {
+					width: 100% !important;
+				}
+
+				.render-medium1{
+					left: 0px !important;
+				}
+
 				.row > .off-12-medium {
 					margin-left: 100%;
 				}
@@ -2193,6 +2212,10 @@ img.stake-full {
 				background-color: #D48A35;
 				height: 1.1px;
 
+			}
+
+			header.no-line > :first-child:after {
+				height: 0px;
 			}
 
 		header.major > p {
