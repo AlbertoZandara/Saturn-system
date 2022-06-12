@@ -658,6 +658,13 @@ img.stake-full {
 		margin-top: 0 !important;
 	}
 
+	.hyphens > p {
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		-ms-hyphens: auto;
+		hyphens: auto;
+	}
+
 /* Row */
 
 	.row {
